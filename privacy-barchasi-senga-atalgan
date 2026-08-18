@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Smaruf Apps</title>
+<style>
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+    line-height: 1.7;
+    color: #1a1a2e;
+    background: #ffffff;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 30px; color: #16213e; }
+  .meta { color: #555; font-size: 0.9rem; margin-bottom: 20px; }
+  .box {
+    background: #f5f6fa;
+    border-left: 4px solid #f0a500;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 16px 0;
+  }
+  a { color: #0d6efd; word-break: break-all; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  footer { margin-top: 40px; font-size: 0.85rem; color: #666; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: August 18, 2026</p>
+
+<div class="box">
+  <p><strong>Developer:</strong> Smaruf</p>
+  <p><strong>Contact email:</strong> <a href="mailto:sadirboyprogrammer@gmail.com">sadirboyprogrammer@gmail.com</a></p>
+  <p>This Privacy Policy applies to all mobile applications published on Google Play by the developer <strong>Smaruf</strong> (including "Barchasi Senga Atalgan").</p>
+</div>
+
+<p>
+  Smaruf develops free book-related mobile applications. These apps are
+  provided at no cost and are intended for use as-is. This Privacy Policy
+  explains how information is handled across all of our applications.
+</p>
+
+<h2>Information Collection and Use</h2>
+<p>
+  Our applications do <strong>not</strong> require you to create an account and do
+  not collect personally identifiable information such as your name, email
+  address, or phone number directly.
+</p>
+<p>
+  However, our apps use third-party services that automatically collect
+  certain data, including <strong>device or other identifiers</strong>
+  (such as the Advertising ID) and app usage/diagnostic information. This
+  data is used to deliver advertisements and to analyze app performance.
+</p>
+
+<h2>Data We Collect and Share</h2>
+<ul>
+  <li><strong>Device or other IDs</strong> (e.g. Advertising ID) — collected and shared with advertising/analytics providers.</li>
+  <li><strong>App activity &amp; diagnostics</strong> — crash logs and usage statistics.</li>
+  <li><strong>Approximate location</strong> — derived from IP address for ad delivery.</li>
+</ul>
+
+<h2>Third-Party Services</h2>
+<p>Our apps use the following Google services, which may collect and process the data listed above:</p>
+<ul>
+  <li><strong>Google AdMob</strong> — for showing advertisements. <a href="https://policies.google.com/technologies/ads">Ads policy</a></li>
+  <li><strong>Google Firebase / Analytics</strong> — for analytics and crash reporting. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a></li>
+  <li><strong>Google Play Services</strong> — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+</ul>
+
+<h2>Permissions Used</h2>
+<ul>
+  <li><strong>INTERNET</strong> — to load advertisements or online content.</li>
+  <li><strong>ACCESS_NETWORK_STATE</strong> — to check network connectivity.</li>
+  <li><strong>com.google.android.gms.permission.AD_ID</strong> — for advertising (personalized or non-personalized ads).</li>
+</ul>
+
+<h2>Data Sharing</h2>
+<p>
+  Device identifiers and usage data may be shared with the third-party
+  providers listed above (Google AdMob, Firebase) solely to provide
+  advertising and analytics services. We do not sell your data.
+</p>
+
+<h2>Data Security</h2>
+<p>
+  The developer does not store user data on its own servers. Any data
+  processed by third-party services is handled securely under their
+  respective privacy policies. You can reset your Advertising ID or opt out
+  of personalized ads in your device settings.
+</p>
+
+<h2>Children's Privacy</h2>
+<p>
+  Our applications do not knowingly collect personal information from
+  children under 13. If you believe a child has provided personal data,
+  please contact us so we can take appropriate action.
+</p>
+
+<h2>Changes to This Privacy Policy</h2>
+<p>
+  This Privacy Policy may be updated from time to time. Any changes will be
+  reflected on this page with an updated date.
+</p>
+
+<h2>Contact</h2>
+<p>
+  If you have any questions about this Privacy Policy, contact us at:<br>
+  <strong>Developer:</strong> Smaruf<br>
+  <strong>Email:</strong> <a href="mailto:sadirboyprogrammer@gmail.com">sadirboyprogrammer@gmail.com</a>
+</p>
+
+<footer>
+  &copy; 2026 Smaruf. All rights reserved.
+</footer>
+
+</body>
+</html>
