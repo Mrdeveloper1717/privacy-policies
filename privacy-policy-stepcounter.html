@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy — Step Counter / Qadamchi / Шагомер</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1f2328;
+    --muted: #57606a;
+    --border: #e4e7eb;
+    --accent: #2f6fed;
+    --card: #f6f8fa;
+    --maxw: 760px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1419;
+      --fg: #e6e9ec;
+      --muted: #9aa4ae;
+      --border: #2a3138;
+      --accent: #6ea0ff;
+      --card: #161c23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 28px 20px 80px; }
+  header.top {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  header.top .inner { max-width: var(--maxw); margin: 0 auto; padding: 12px 20px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
+  header.top .brand { font-weight: 600; font-size: 15px; }
+  nav.lang a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 13px;
+    margin-left: 6px;
+  }
+  nav.lang a:hover { color: var(--accent); border-color: var(--accent); }
+  h1 { font-size: 26px; line-height: 1.25; margin: 8px 0 4px; }
+  h2 { font-size: 21px; margin: 44px 0 10px; padding-top: 18px; border-top: 1px solid var(--border); }
+  h3 { font-size: 17px; margin: 26px 0 6px; }
+  p, ul { margin: 10px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  code { background: var(--card); padding: 1px 6px; border-radius: 5px; font-size: 13px; }
+  .meta {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 16px 0 8px;
+    font-size: 14.5px;
+    color: var(--muted);
+  }
+  .meta strong { color: var(--fg); }
+  .section-lang { scroll-margin-top: 70px; }
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="inner">
+    <span class="brand">Step Counter · Qadamchi · Шагомер</span>
+    <nav class="lang">
+      <a href="#en">English</a>
+      <a href="#uz">O‘zbekcha</a>
+      <a href="#ru">Русский</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============== ENGLISH ============== -->
+  <section id="en" class="section-lang" lang="en">
+    <h1>Privacy Policy for Step Counter</h1>
+    <div class="meta">
+      <div><strong>Effective date:</strong> 20 August 2026</div>
+      <div><strong>Developer:</strong> Kitoblar Olami | Smaruf</div>
+      <div><strong>Contact:</strong> sadirboyprogrammer@gmail.com</div>
+      <div><strong>Application ID:</strong> com.smaruf.stepcounter</div>
+    </div>
+
+    <h3>Summary</h3>
+    <p>Step Counter is an offline pedometer application. It does not have a server, does not create user accounts, and does not require an internet connection. The application does not include the <code>INTERNET</code> permission, which means it is technically unable to transmit any information off your device. All information stays in the application's private storage on your phone.</p>
+
+    <h3>Information the app stores on your device</h3>
+    <p>The app stores the following information locally, in storage that only this application can read:</p>
+    <ul>
+      <li><strong>Profile information you enter yourself:</strong> gender, height, weight and year of birth. These are used only to calculate calories burned, distance, stride length, BMI, BMR and recommended weight range. Entering them is optional — the onboarding screens can be skipped.</li>
+      <li><strong>Daily step history:</strong> for each date, the number of steps recorded, along with the derived distance, calories, active time and average pace.</li>
+      <li><strong>Application settings:</strong> language, theme, measurement units, daily step goal, first day of the week, notification preferences and screen-on preference.</li>
+    </ul>
+
+    <h3>Information the app does NOT collect</h3>
+    <p>The app does not collect, request or access:</p>
+    <ul>
+      <li>Name, email address, phone number or any account identifier</li>
+      <li>Location or GPS data</li>
+      <li>Contacts, SMS messages, call history, photos, camera or microphone</li>
+      <li>Advertising identifiers</li>
+      <li>Heart rate, sleep, blood oxygen or any other medical measurement</li>
+      <li>Any analytics, telemetry or crash reporting data</li>
+    </ul>
+
+    <h3>Sensors and permissions</h3>
+    <ul>
+      <li><strong>Physical activity (Activity Recognition):</strong> required to read the step count from your device's built-in step sensor. This is the app's core function. The app asks for this permission the first time it is used and it can be revoked at any time in Android settings.</li>
+      <li><strong>Notifications:</strong> used to show a persistent notification with your current step count while the app counts in the background, and to notify you when you reach your daily goal.</li>
+      <li><strong>Foreground service (health type), wake lock, run at startup:</strong> required so that step counting continues while the app is closed or after the phone restarts. Without this, your daily step total would reset whenever you leave the app.</li>
+    </ul>
+    <p>The app does not use these permissions for any purpose other than the ones described above.</p>
+
+    <h3>Sharing</h3>
+    <p>The developer does not share your information with anyone, because the information never leaves your device.</p>
+    <p>The app includes an optional <strong>CSV export</strong> feature. When you tap it, your step history is written to a temporary file and Android's standard sharing dialog opens. You choose which application receives the file. This transfer is started and controlled entirely by you; the developer neither sees nor receives the file.</p>
+
+    <h3>Backup</h3>
+    <p>If Android's automatic backup is enabled on your phone, your profile, step history and settings may be backed up to <strong>your own Google Drive account</strong> and restored when you set up a new device. This is a feature of the Android operating system. The backup belongs to your Google account; the developer has no access to it. You can disable it in your device's Google backup settings.</p>
+
+    <h3>Data retention and deletion</h3>
+    <p>Your information is kept on your device for as long as the app is installed.</p>
+    <ul>
+      <li>To delete your step history: open <strong>Settings → Delete data</strong> inside the app.</li>
+      <li>To delete everything: uninstall the app. Since there is no account and no server, no copy of your information remains anywhere.</li>
+    </ul>
+
+    <h3>Security</h3>
+    <p>Your information is stored in the application's private storage area, which the Android operating system isolates from other applications. Because no data is transmitted, there is no transmission to intercept.</p>
+
+    <h3>Children</h3>
+    <p>The application is not directed at children under 13. It does not contain content designed to appeal to children and does not knowingly collect information from them.</p>
+
+    <h3>Changes to this policy</h3>
+    <p>If the application's behaviour changes in a way that affects this policy, this page will be updated and the effective date above will be changed. Significant changes will also be described in the app's release notes on Google Play.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about this policy: sadirboyprogrammer@gmail.com</p>
+  </section>
+
+  <!-- ============== O'ZBEKCHA ============== -->
+  <section id="uz" class="section-lang" lang="uz">
+    <h2>Qadamchi ilovasining maxfiylik siyosati</h2>
+    <div class="meta">
+      <div><strong>Kuchga kirgan sana:</strong> 20-avgust 2026</div>
+      <div><strong>Ishlab chiquvchi:</strong> Kitoblar Olami | Smaruf</div>
+      <div><strong>Aloqa:</strong> sadirboyprogrammer@gmail.com</div>
+      <div><strong>Ilova identifikatori:</strong> com.smaruf.stepcounter</div>
+    </div>
+
+    <h3>Qisqacha</h3>
+    <p>Qadamchi — oflayn qadam hisoblagich. Ilovaning serveri yo‘q, foydalanuvchi hisobi yo‘q, internet talab qilmaydi. Ilovada <code>INTERNET</code> ruxsati umuman mavjud emas, ya'ni u texnik jihatdan qurilmangizdan tashqariga hech qanday ma'lumot yubora olmaydi. Barcha ma'lumot telefoningiz ichida, ilovaning shaxsiy xotirasida qoladi.</p>
+
+    <h3>Ilova qurilmangizda nimani saqlaydi</h3>
+    <p>Quyidagilar faqat shu ilova o‘qiy oladigan xotirada saqlanadi:</p>
+    <ul>
+      <li><strong>O‘zingiz kiritgan profil ma'lumotlari:</strong> jins, bo‘y, vazn va tug‘ilgan yil. Ular faqat kaloriya, masofa, qadam uzunligi, BMI, BMR va tavsiya etilgan vazn diapazonini hisoblash uchun ishlatiladi. Kiritish ixtiyoriy — dastlabki ekranlarni o‘tkazib yuborish mumkin.</li>
+      <li><strong>Kunlik qadam tarixi:</strong> har bir sana uchun qadam soni va undan kelib chiqadigan masofa, kaloriya, faol vaqt va o‘rtacha tezlik.</li>
+      <li><strong>Ilova sozlamalari:</strong> til, mavzu, o‘lchov birligi, kunlik maqsad, hafta boshi kuni, bildirishnoma sozlamalari, ekranni yoniq saqlash.</li>
+    </ul>
+
+    <h3>Ilova NIMANI yig‘maydi</h3>
+    <p>Ism, email, telefon raqami, hisob ma'lumotlari; joylashuv yoki GPS; kontaktlar, SMS, qo‘ng‘iroqlar tarixi, rasmlar, kamera, mikrofon; reklama identifikatorlari; yurak urishi, uyqu, qondagi kislorod yoki boshqa tibbiy o‘lchov; analitika va xatoliklar haqidagi hisobotlar — bularning <strong>birortasi ham</strong> yig‘ilmaydi.</p>
+
+    <h3>Sensorlar va ruxsatnomalar</h3>
+    <ul>
+      <li><strong>Jismoniy faollik (Activity Recognition):</strong> telefondagi qadam sensoridan o‘qish uchun kerak. Bu ilovaning asosiy vazifasi. Ruxsat birinchi ishlatishda so‘raladi va Android sozlamalaridan istalgan payt bekor qilinishi mumkin.</li>
+      <li><strong>Bildirishnomalar:</strong> fonda sanash davom etayotganda joriy qadam sonini ko‘rsatuvchi doimiy bildirishnoma uchun va kunlik maqsad bajarilganda xabar berish uchun.</li>
+      <li><strong>Foreground service (<code>health</code> turi), wake lock, tizim yonganda ishga tushish:</strong> ilova yopilganda yoki telefon o‘chib yonganda ham sanash to‘xtamasligi uchun kerak. Busiz ilovadan chiqqaningizda kunlik hisob yo‘qolib qolardi.</li>
+    </ul>
+    <p>Bu ruxsatlar yuqorida yozilganidan boshqa maqsadda ishlatilmaydi.</p>
+
+    <h3>Ulashish</h3>
+    <p>Ishlab chiquvchi ma'lumotlaringizni hech kim bilan ulashmaydi, chunki ular qurilmangizdan umuman chiqmaydi.</p>
+    <p>Ilovada ixtiyoriy <strong>CSV eksport</strong> imkoniyati bor. Uni bosganingizda tarix vaqtinchalik faylga yoziladi va Android'ning standart ulashish oynasi ochiladi — faylni qaysi ilovaga yuborishni <strong>siz o‘zingiz</strong> tanlaysiz. Bu jarayonni siz boshlaysiz va boshqarasiz; ishlab chiquvchi bu faylni ko‘rmaydi ham, olmaydi ham.</p>
+
+    <h3>Zaxira nusxa</h3>
+    <p>Telefoningizda Android'ning avtomatik zaxiralashi yoqilgan bo‘lsa, profilingiz, qadam tarixingiz va sozlamalaringiz <strong>o‘zingizning Google Drive akkauntingizga</strong> zaxiralanishi va yangi qurilmada tiklanishi mumkin. Bu Android tizimining xususiyati. Zaxira sizning Google hisobingizga tegishli, ishlab chiquvchining unga kirish imkoni yo‘q. Uni qurilma sozlamalaridagi Google zaxira bo‘limidan o‘chirib qo‘yishingiz mumkin.</p>
+
+    <h3>Saqlash muddati va o‘chirish</h3>
+    <p>Ma'lumot ilova o‘rnatilgan turgan davrda qurilmangizda saqlanadi.</p>
+    <ul>
+      <li>Qadam tarixini o‘chirish: ilova ichida <strong>Sozlamalar → Ma'lumotlarni o‘chirish</strong>.</li>
+      <li>Hammasini o‘chirish: ilovani o‘chirib tashlang. Hisob ham, server ham bo‘lmagani uchun hech qayerda nusxa qolmaydi.</li>
+    </ul>
+
+    <h3>Xavfsizlik</h3>
+    <p>Ma'lumot ilovaning shaxsiy xotira sohasida saqlanadi — Android uni boshqa ilovalardan ajratib turadi. Hech narsa uzatilmagani uchun uzatishni ushlab qolish ham mumkin emas.</p>
+
+    <h3>Bolalar</h3>
+    <p>Ilova 13 yoshgacha bo‘lgan bolalarga mo‘ljallanmagan. Unda bolalarni jalb qilish uchun yaratilgan mazmun yo‘q va ulardan ataylab ma'lumot yig‘ilmaydi.</p>
+
+    <h3>Siyosatdagi o‘zgarishlar</h3>
+    <p>Ilova xatti-harakati shu siyosatga ta'sir qiladigan darajada o‘zgarsa, ushbu sahifa yangilanadi va yuqoridagi sana o‘zgartiriladi.</p>
+
+    <h3>Aloqa</h3>
+    <p>Savollar uchun: sadirboyprogrammer@gmail.com</p>
+  </section>
+
+  <!-- ============== РУССКИЙ ============== -->
+  <section id="ru" class="section-lang" lang="ru">
+    <h2>Политика конфиденциальности приложения «Шагомер»</h2>
+    <div class="meta">
+      <div><strong>Дата вступления в силу:</strong> 20 августа 2026</div>
+      <div><strong>Разработчик:</strong> Kitoblar Olami | Smaruf</div>
+      <div><strong>Контакт:</strong> sadirboyprogrammer@gmail.com</div>
+      <div><strong>Идентификатор приложения:</strong> com.smaruf.stepcounter</div>
+    </div>
+
+    <h3>Кратко</h3>
+    <p>«Шагомер» — офлайн-приложение для подсчёта шагов. У него нет сервера, нет учётных записей и оно не требует интернета. В приложении отсутствует разрешение <code>INTERNET</code>, то есть оно технически не способно передать какие-либо данные за пределы вашего устройства. Вся информация остаётся в приватном хранилище приложения на вашем телефоне.</p>
+
+    <h3>Что приложение хранит на устройстве</h3>
+    <ul>
+      <li><strong>Введённые вами данные профиля:</strong> пол, рост, вес и год рождения. Используются только для расчёта калорий, дистанции, длины шага, ИМТ, базового обмена и рекомендуемого диапазона веса. Ввод необязателен — начальные экраны можно пропустить.</li>
+      <li><strong>История шагов по дням:</strong> количество шагов за каждую дату, а также рассчитанные дистанция, калории, активное время и средний темп.</li>
+      <li><strong>Настройки приложения:</strong> язык, тема, единицы измерения, дневная цель, первый день недели, настройки уведомлений, режим постоянно включённого экрана.</li>
+    </ul>
+
+    <h3>Что приложение НЕ собирает</h3>
+    <p>Имя, email, номер телефона, идентификаторы аккаунтов; местоположение и GPS; контакты, SMS, историю звонков, фотографии, камеру, микрофон; рекламные идентификаторы; пульс, сон, уровень кислорода и другие медицинские показатели; аналитику и отчёты об ошибках — <strong>ничего из перечисленного</strong>.</p>
+
+    <h3>Датчики и разрешения</h3>
+    <ul>
+      <li><strong>Физическая активность (Activity Recognition):</strong> необходимо для чтения показаний встроенного датчика шагов. Это основная функция приложения. Разрешение запрашивается при первом запуске и может быть отозвано в настройках Android в любой момент.</li>
+      <li><strong>Уведомления:</strong> для постоянного уведомления с текущим числом шагов во время подсчёта в фоне и для сообщения о достижении дневной цели.</li>
+      <li><strong>Фоновая служба (тип <code>health</code>), wake lock, запуск при загрузке:</strong> нужны, чтобы подсчёт продолжался при закрытом приложении и после перезагрузки телефона. Без этого дневной итог терялся бы при выходе из приложения.</li>
+    </ul>
+    <p>Эти разрешения не используются ни для каких других целей.</p>
+
+    <h3>Передача данных</h3>
+    <p>Разработчик не передаёт ваши данные никому, поскольку они не покидают устройство.</p>
+    <p>В приложении есть необязательная функция <strong>экспорта в CSV</strong>. При её вызове история записывается во временный файл и открывается стандартное окно «Поделиться» — вы <strong>сами</strong> выбираете, какому приложению передать файл. Этот процесс инициируете и контролируете вы; разработчик файл не видит и не получает.</p>
+
+    <h3>Резервное копирование</h3>
+    <p>Если на телефоне включено автоматическое резервное копирование Android, ваш профиль, история шагов и настройки могут копироваться в <strong>ваш собственный аккаунт Google Drive</strong> и восстанавливаться на новом устройстве. Это функция операционной системы Android. Резервная копия принадлежит вашему аккаунту Google, у разработчика нет к ней доступа. Отключить её можно в настройках резервного копирования Google на устройстве.</p>
+
+    <h3>Хранение и удаление</h3>
+    <p>Данные хранятся на устройстве, пока приложение установлено.</p>
+    <ul>
+      <li>Удалить историю шагов: <strong>Настройки → Удалить данные</strong> внутри приложения.</li>
+      <li>Удалить всё: удалите приложение. Поскольку нет ни аккаунта, ни сервера, копий нигде не остаётся.</li>
+    </ul>
+
+    <h3>Безопасность</h3>
+    <p>Данные хранятся в приватной области приложения, изолированной операционной системой Android от других приложений. Так как передача данных отсутствует, перехватывать нечего.</p>
+
+    <h3>Дети</h3>
+    <p>Приложение не предназначено для детей младше 13 лет, не содержит контента, рассчитанного на привлечение детей, и не собирает намеренно их данные.</p>
+
+    <h3>Изменения политики</h3>
+    <p>Если поведение приложения изменится так, что это затронет данную политику, страница будет обновлена, а дата вступления в силу изменена.</p>
+
+    <h3>Контакт</h3>
+    <p>Вопросы по политике: sadirboyprogrammer@gmail.com</p>
+  </section>
+
+  <footer>
+    Step Counter · Qadamchi · Шагомер — com.smaruf.stepcounter · Kitoblar Olami | Smaruf
+  </footer>
+
+</div>
+
+</body>
+</html>
