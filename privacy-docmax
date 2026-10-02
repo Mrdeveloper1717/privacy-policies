@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy — DocMax - Document Manager</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1f2328;
+    --muted: #57606a;
+    --border: #e4e7eb;
+    --accent: #2f6fed;
+    --card: #f6f8fa;
+    --maxw: 760px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1419;
+      --fg: #e6e9ec;
+      --muted: #9aa4ae;
+      --border: #2a3138;
+      --accent: #6ea0ff;
+      --card: #161c23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 28px 20px 80px; }
+  header.top {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  header.top .inner { max-width: var(--maxw); margin: 0 auto; padding: 12px 20px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
+  header.top .brand { font-weight: 600; font-size: 15px; }
+  nav.lang a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 13px;
+    margin-left: 6px;
+  }
+  nav.lang a:hover { color: var(--accent); border-color: var(--accent); }
+  h1 { font-size: 26px; line-height: 1.25; margin: 8px 0 4px; }
+  h2 { font-size: 21px; margin: 44px 0 10px; padding-top: 18px; border-top: 1px solid var(--border); }
+  h3 { font-size: 17px; margin: 26px 0 6px; }
+  p, ul { margin: 10px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  code { background: var(--card); padding: 1px 6px; border-radius: 5px; font-size: 13px; }
+  .meta {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 16px 0 8px;
+    font-size: 14.5px;
+    color: var(--muted);
+  }
+  .meta strong { color: var(--fg); }
+  .section-lang { scroll-margin-top: 70px; }
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="inner">
+    <span class="brand">DocMax - Document Manager</span>
+    <nav class="lang">
+      <a href="#en">English</a>
+      <a href="#uz">O‘zbekcha</a>
+      <a href="#ru">Русский</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ============== ENGLISH ============== -->
+  <section id="en" class="section-lang" lang="en">
+    <h1>Privacy Policy for DocMax - Document Manager</h1>
+    <div class="meta">
+      <div><strong>Effective date:</strong> 2 October 2026</div>
+      <div><strong>Developer:</strong> Kitoblar Olami | Smaruf</div>
+      <div><strong>Contact:</strong> sadirboyprogrammer@gmail.com</div>
+      <div><strong>Application ID:</strong> com.smaruf.docmax</div>
+    </div>
+
+    <h3>Summary</h3>
+    <p>DocMax is an offline document manager, reader and scanner. It supports PDF, Word, PowerPoint, Excel, EPUB, TXT and image files. The application does not create user accounts, does not require registration and does not show ads. It does not include the <code>INTERNET</code> permission, which means the application itself is technically unable to transmit any of your files or information off your device. Everything stays on your phone.</p>
+
+    <h3>Information the app stores on your device</h3>
+    <p>The following is stored locally, in storage controlled by the app, and is never sent to the developer:</p>
+    <ul>
+      <li><strong>Application settings:</strong> language, theme (light/dark), default-reader choice and similar preferences.</li>
+      <li><strong>Recent and favorite files:</strong> stored as file paths (references to where a file is on your device), used to show your recently opened and favorited documents. Only a limited number of recent items is kept.</li>
+      <li><strong>Files you create with the tools:</strong> results such as merged, split, compressed or converted PDFs, and scanned documents, are saved to the <code>Download/DocMax</code> folder on your device. They remain on your device under your control.</li>
+    </ul>
+
+    <h3>Information the app does NOT collect</h3>
+    <p>The app does not collect, request or access:</p>
+    <ul>
+      <li>Name, email address, phone number or any account identifier</li>
+      <li>Location or GPS data</li>
+      <li>Contacts, SMS messages or call history</li>
+      <li>Advertising identifiers (no <code>AD_ID</code>)</li>
+      <li>Any analytics, telemetry or crash-reporting data (no Firebase, Crashlytics, Google Analytics or similar)</li>
+    </ul>
+    <p>The documents DocMax opens or creates — and their text and images — never leave your device.</p>
+
+    <h3>Permissions and why they are needed</h3>
+    <ul>
+      <li><strong>All files access (<code>MANAGE_EXTERNAL_STORAGE</code>, Android 11+):</strong> so the "Files" screen can find and list your documents (PDF, Word, PPTX, EPUB, TXT, Excel) from all folders on your device — Downloads, messenger folders, other app folders and so on — in one place. This is the core function of a document manager. It is requested only when you tap "Allow"; the app does not request it automatically on launch, and you can decline or revoke it at any time in Android settings.</li>
+      <li><strong>Storage (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>):</strong> on older Android versions, used to read your documents and to save tool results to your device.</li>
+      <li><strong>Camera (<code>CAMERA</code>):</strong> used for the document scanner and other camera-based features (see below). The camera is used only while you are actively using those features.</li>
+    </ul>
+    <p>These permissions are used only for the purposes described above.</p>
+
+    <h3>Camera features</h3>
+    <ul>
+      <li><strong>Document scanner:</strong> lets you scan a document or book page with your camera and save it as a PDF. The scanned result is written to your device only when you choose to save it; it is not sent anywhere.</li>
+      <li><strong>AR Tracing:</strong> shows a live camera view so you can trace a drawing. The camera stream is shown on screen only and is not recorded or transmitted.</li>
+      <li><strong>Light table:</strong> temporarily sets your screen to maximum brightness. This feature uses the screen only — it does not use the camera.</li>
+    </ul>
+
+    <h3>Document scanner and Google Play Services</h3>
+    <p>The document scanner is provided by Google's on-device document-scanning technology (Google ML Kit, via Google Play Services). According to Google's documentation, scanned images are processed on your device and are not sent to Google's servers for scanning. The scanner module itself may be delivered or updated by Google Play Services, which is a separate system component governed by Google's own privacy policy. DocMax itself has no internet permission and does not upload your scans.</p>
+
+    <h3>Sharing</h3>
+    <p>The developer does not share your information with anyone, because it never leaves your device.</p>
+    <p>DocMax includes "Share" and "Open in another app" features. When you use them, Android's standard sharing dialog opens and you choose which application receives the file (for example a messenger or email app). This transfer is started and controlled entirely by you; where the file goes depends on the app you pick. DocMax itself does not send anything on its own, and the developer neither sees nor receives the file.</p>
+
+    <h3>Data retention and deletion</h3>
+    <p>Your settings and lists are kept on your device while the app is installed.</p>
+    <ul>
+      <li>To remove the app's settings and recent/favorite lists: clear the app's data in Android settings, or uninstall the app.</li>
+      <li>Files you created (in <code>Download/DocMax</code>) and your own documents are not deleted when you uninstall — you can delete them yourself with any file manager.</li>
+    </ul>
+    <p>Because there is no account and no server, no copy of your information remains anywhere off your device.</p>
+
+    <h3>Security</h3>
+    <p>Your settings and lists are stored in the application's private storage area, which the Android operating system isolates from other applications. Because the app transmits no data, there is no transmission to intercept.</p>
+
+    <h3>Children</h3>
+    <p>DocMax is a general-purpose document tool and is not directed at children under 13. It does not contain content designed to appeal to children and does not knowingly collect information from them.</p>
+
+    <h3>Third-party services</h3>
+    <p>The current version of DocMax does not use advertising networks, third-party analytics services or third-party crash-reporting services. The document rendering, PDF tools, EPUB and Word/PowerPoint viewing, and the scanner all run on your device.</p>
+
+    <h3>Changes to this policy</h3>
+    <p>If the application's behaviour changes in a way that affects this policy, this page will be updated and the effective date above will be changed. Significant changes will also be described in the app's release notes on Google Play.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about this policy: sadirboyprogrammer@gmail.com</p>
+  </section>
+
+  <!-- ============== O'ZBEKCHA ============== -->
+  <section id="uz" class="section-lang" lang="uz">
+    <h2>DocMax - Document Manager ilovasining maxfiylik siyosati</h2>
+    <div class="meta">
+      <div><strong>Kuchga kirgan sana:</strong> 2-oktabr 2026</div>
+      <div><strong>Ishlab chiquvchi:</strong> Kitoblar Olami | Smaruf</div>
+      <div><strong>Aloqa:</strong> sadirboyprogrammer@gmail.com</div>
+      <div><strong>Ilova identifikatori:</strong> com.smaruf.docmax</div>
+    </div>
+
+    <h3>Qisqacha</h3>
+    <p>DocMax — oflayn hujjat boshqaruvchi, o‘qigich va skaner. PDF, Word, PowerPoint, Excel, EPUB, TXT va rasm formatlarini qo‘llab-quvvatlaydi. Ilovaning foydalanuvchi hisobi yo‘q, ro‘yxatdan o‘tish talab qilinmaydi va reklama ko‘rsatilmaydi. Ilovada <code>INTERNET</code> ruxsati umuman mavjud emas, ya'ni ilovaning o‘zi texnik jihatdan sizning fayllaringiz yoki ma'lumotlaringizni qurilmangizdan tashqariga yubora olmaydi. Hammasi telefoningizda qoladi.</p>
+
+    <h3>Ilova qurilmangizda nimani saqlaydi</h3>
+    <p>Quyidagilar faqat shu ilova boshqaradigan xotirada saqlanadi va hech qachon ishlab chiquvchiga yuborilmaydi:</p>
+    <ul>
+      <li><strong>Ilova sozlamalari:</strong> til, mavzu (yorug‘/tungi), standart o‘qigich tanlovi va shunga o‘xshash sozlamalar.</li>
+      <li><strong>So‘nggi ochilganlar va sevimlilar:</strong> fayl yo‘llari (faylning qurilmangizda qayerdaligiga ishora) sifatida saqlanadi va so‘nggi ochilgan hamda sevimli hujjatlaringizni ko‘rsatish uchun ishlatiladi. So‘nggilardan faqat cheklangan soni saqlanadi.</li>
+      <li><strong>Vositalar bilan yaratgan fayllaringiz:</strong> birlashtirilgan, bo‘lingan, siqilgan yoki aylantirilgan PDF hamda skaner natijalari qurilmangizdagi <code>Download/DocMax</code> papkasiga saqlanadi va sizning nazoratingizda qoladi.</li>
+    </ul>
+
+    <h3>Ilova NIMANI yig‘maydi</h3>
+    <p>Ilova quyidagilarni yig‘maydi, so‘ramaydi yoki ularga kirmaydi:</p>
+    <ul>
+      <li>Ism, email, telefon raqami yoki biror hisob identifikatori</li>
+      <li>Joylashuv yoki GPS ma'lumotlari</li>
+      <li>Kontaktlar, SMS yoki qo‘ng‘iroqlar tarixi</li>
+      <li>Reklama identifikatorlari (<code>AD_ID</code> ishlatilmaydi)</li>
+      <li>Analitika, telemetriya yoki xatoliklar hisoboti (Firebase, Crashlytics, Google Analytics va shunga o‘xshashlar yo‘q)</li>
+    </ul>
+    <p>DocMax ochadigan yoki yaratadigan hujjatlar — ularning matni va tasviri — hech qachon qurilmangizdan chiqmaydi.</p>
+
+    <h3>Ruxsatnomalar va ular nega kerak</h3>
+    <ul>
+      <li><strong>Barcha fayllarga kirish (<code>MANAGE_EXTERNAL_STORAGE</code>, Android 11+):</strong> "Fayllar" ekrani qurilmangizdagi barcha papkalardan — Yuklab olinganlar, messenjer papkalari, boshqa ilova papkalari va h.k. — hujjatlaringizni (PDF, Word, PPTX, EPUB, TXT, Excel) topib, bitta ro‘yxatda ko‘rsatishi uchun. Bu — hujjat boshqaruvchining asosiy vazifasi. Ruxsat faqat siz "Ruxsat berish"ni bosganingizda so‘raladi; ilova ochilishi bilan avtomatik so‘ramaydi, va uni Android sozlamalaridan istalgan payt rad etishingiz yoki bekor qilishingiz mumkin.</li>
+      <li><strong>Xotira (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>):</strong> eski Android versiyalarida hujjatlaringizni o‘qish va vositalar natijasini qurilmaga saqlash uchun.</li>
+      <li><strong>Kamera (<code>CAMERA</code>):</strong> hujjat skaneri va boshqa kamera asosidagi funksiyalar uchun (pastga qarang). Kamera faqat siz o‘sha funksiyalardan foydalanayotganingizda ishlaydi.</li>
+    </ul>
+    <p>Bu ruxsatlar yuqorida yozilganidan boshqa maqsadda ishlatilmaydi.</p>
+
+    <h3>Kamera asosidagi funksiyalar</h3>
+    <ul>
+      <li><strong>Hujjat skaneri:</strong> kamera orqali hujjat yoki kitob sahifasini skanerlab, PDF qilib saqlash imkonini beradi. Skaner natijasi faqat siz saqlashni tanlaganingizda qurilmangizga yoziladi; hech qayerga yuborilmaydi.</li>
+      <li><strong>AR Tracing:</strong> rasm chizish uchun jonli kamera ko‘rinishini ko‘rsatadi. Kamera oqimi faqat ekranda ko‘rsatiladi, yozib olinmaydi va uzatilmaydi.</li>
+      <li><strong>Yorug‘lik stoli:</strong> ekranni vaqtincha maksimal yorqinlikka o‘tkazadi. Bu funksiya faqat ekrandan foydalanadi — kamera ishlatilmaydi.</li>
+    </ul>
+
+    <h3>Hujjat skaneri va Google Play Services</h3>
+    <p>Hujjat skaneri Google'ning qurilmada ishlaydigan skaner texnologiyasi (Google ML Kit, Google Play Services orqali) yordamida ishlaydi. Google hujjatlariga ko‘ra, skanerlangan tasvirlar qurilmangizda qayta ishlanadi va skanerlash uchun Google serverlariga yuborilmaydi. Skaner moduli Google Play Services tomonidan yetkazilishi yoki yangilanishi mumkin — bu alohida tizim komponenti bo‘lib, Google'ning o‘z maxfiylik siyosatiga bo‘ysunadi. DocMax'ning o‘zida internet ruxsati yo‘q va u skaneringizni hech qayerga yuklamaydi.</p>
+
+    <h3>Ulashish</h3>
+    <p>Ishlab chiquvchi ma'lumotlaringizni hech kim bilan ulashmaydi, chunki ular qurilmangizdan umuman chiqmaydi.</p>
+    <p>DocMax'da "Ulashish" va "Boshqa ilovada ochish" imkoniyatlari bor. Ulardan foydalanganingizda Android'ning standart ulashish oynasi ochiladi va faylni qaysi ilovaga (masalan messenjer yoki pochta) yuborishni <strong>siz o‘zingiz</strong> tanlaysiz. Bu jarayonni siz boshlaysiz va boshqarasiz; fayl qayerga ketishi siz tanlagan ilovaga bog‘liq. DocMax o‘zi hech narsa yubormaydi, ishlab chiquvchi esa bu faylni ko‘rmaydi ham, olmaydi ham.</p>
+
+    <h3>Saqlash muddati va o‘chirish</h3>
+    <p>Sozlamalaringiz va ro‘yxatlaringiz ilova o‘rnatilgan turgan davrda qurilmangizda saqlanadi.</p>
+    <ul>
+      <li>Ilovaning sozlamalari va so‘nggi/sevimli ro‘yxatlarini o‘chirish: Android sozlamalarida ilova ma'lumotlarini tozalang yoki ilovani o‘chirib tashlang.</li>
+      <li>Siz yaratgan fayllar (<code>Download/DocMax</code> ichida) va o‘z hujjatlaringiz ilovani o‘chirganda o‘chmaydi — ularni istalgan fayl menejeri orqali o‘zingiz o‘chirishingiz mumkin.</li>
+    </ul>
+    <p>Hisob ham, server ham bo‘lmagani uchun ma'lumotlaringizning nusxasi qurilmangizdan tashqarida hech qayerda qolmaydi.</p>
+
+    <h3>Xavfsizlik</h3>
+    <p>Sozlamalaringiz va ro‘yxatlaringiz ilovaning shaxsiy xotira sohasida saqlanadi — Android uni boshqa ilovalardan ajratib turadi. Ilova hech narsa uzatmagani uchun uzatishni ushlab qolish ham mumkin emas.</p>
+
+    <h3>Bolalar</h3>
+    <p>DocMax — umumiy maqsadli hujjat vositasi bo‘lib, 13 yoshgacha bo‘lgan bolalarga mo‘ljallanmagan. Unda bolalarni jalb qilish uchun yaratilgan mazmun yo‘q va ulardan ataylab ma'lumot yig‘ilmaydi.</p>
+
+    <h3>Uchinchi tomon xizmatlari</h3>
+    <p>DocMax'ning joriy versiyasida reklama tarmoqlari, uchinchi tomon analitika xizmatlari yoki uchinchi tomon xatolik hisobot xizmatlari ishlatilmaydi. Hujjatlarni ko‘rsatish, PDF vositalari, EPUB va Word/PowerPoint ko‘rish hamda skaner — barchasi qurilmangizda ishlaydi.</p>
+
+    <h3>Siyosatdagi o‘zgarishlar</h3>
+    <p>Ilova xatti-harakati shu siyosatga ta'sir qiladigan darajada o‘zgarsa, ushbu sahifa yangilanadi va yuqoridagi sana o‘zgartiriladi. Muhim o‘zgarishlar Google Play'dagi yangilanish izohlarida ham ko‘rsatiladi.</p>
+
+    <h3>Aloqa</h3>
+    <p>Savollar uchun: sadirboyprogrammer@gmail.com</p>
+  </section>
+
+  <!-- ============== РУССКИЙ ============== -->
+  <section id="ru" class="section-lang" lang="ru">
+    <h2>Политика конфиденциальности приложения DocMax - Document Manager</h2>
+    <div class="meta">
+      <div><strong>Дата вступления в силу:</strong> 2 октября 2026</div>
+      <div><strong>Разработчик:</strong> Kitoblar Olami | Smaruf</div>
+      <div><strong>Контакт:</strong> sadirboyprogrammer@gmail.com</div>
+      <div><strong>Идентификатор приложения:</strong> com.smaruf.docmax</div>
+    </div>
+
+    <h3>Кратко</h3>
+    <p>DocMax — офлайн-приложение для управления документами, их просмотра и сканирования. Поддерживает PDF, Word, PowerPoint, Excel, EPUB, TXT и изображения. У приложения нет учётных записей, не требуется регистрация и не показывается реклама. В приложении отсутствует разрешение <code>INTERNET</code>, то есть само приложение технически не способно передать ваши файлы или данные за пределы устройства. Всё остаётся на вашем телефоне.</p>
+
+    <h3>Что приложение хранит на устройстве</h3>
+    <p>Следующее хранится локально, в хранилище приложения, и никогда не отправляется разработчику:</p>
+    <ul>
+      <li><strong>Настройки приложения:</strong> язык, тема (светлая/тёмная), выбор приложения по умолчанию и подобные настройки.</li>
+      <li><strong>Недавние и избранные файлы:</strong> хранятся как пути к файлам (ссылки на расположение файла на устройстве) и используются для показа недавно открытых и избранных документов. Хранится лишь ограниченное число недавних элементов.</li>
+      <li><strong>Файлы, созданные инструментами:</strong> объединённые, разделённые, сжатые или конвертированные PDF, а также результаты сканирования сохраняются в папку <code>Download/DocMax</code> на устройстве и остаются под вашим контролем.</li>
+    </ul>
+
+    <h3>Что приложение НЕ собирает</h3>
+    <p>Приложение не собирает, не запрашивает и не получает доступ к:</p>
+    <ul>
+      <li>Имени, email, номеру телефона или идентификатору аккаунта</li>
+      <li>Местоположению или GPS</li>
+      <li>Контактам, SMS или истории звонков</li>
+      <li>Рекламным идентификаторам (<code>AD_ID</code> не используется)</li>
+      <li>Данным аналитики, телеметрии или отчётам об ошибках (нет Firebase, Crashlytics, Google Analytics и подобного)</li>
+    </ul>
+    <p>Документы, которые DocMax открывает или создаёт, — их текст и изображения — никогда не покидают ваше устройство.</p>
+
+    <h3>Разрешения и зачем они нужны</h3>
+    <ul>
+      <li><strong>Доступ ко всем файлам (<code>MANAGE_EXTERNAL_STORAGE</code>, Android 11+):</strong> чтобы экран «Файлы» мог находить и показывать ваши документы (PDF, Word, PPTX, EPUB, TXT, Excel) из всех папок устройства — «Загрузки», папки мессенджеров, папки других приложений и т. д. — в одном месте. Это основная функция менеджера документов. Разрешение запрашивается только когда вы нажимаете «Разрешить»; приложение не запрашивает его автоматически при запуске, и вы можете отклонить или отозвать его в настройках Android в любой момент.</li>
+      <li><strong>Хранилище (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>):</strong> на старых версиях Android — для чтения ваших документов и сохранения результатов инструментов на устройство.</li>
+      <li><strong>Камера (<code>CAMERA</code>):</strong> для сканера документов и других функций на основе камеры (см. ниже). Камера используется только когда вы активно пользуетесь этими функциями.</li>
+    </ul>
+    <p>Эти разрешения не используются ни для каких других целей.</p>
+
+    <h3>Функции на основе камеры</h3>
+    <ul>
+      <li><strong>Сканер документов:</strong> позволяет отсканировать документ или страницу книги камерой и сохранить как PDF. Результат записывается на устройство только когда вы решите его сохранить; никуда не отправляется.</li>
+      <li><strong>AR Tracing:</strong> показывает живое изображение с камеры, чтобы обводить рисунок. Поток с камеры отображается только на экране, не записывается и не передаётся.</li>
+      <li><strong>Световой стол:</strong> временно включает максимальную яркость экрана. Эта функция использует только экран — камера не задействована.</li>
+    </ul>
+
+    <h3>Сканер документов и Google Play Services</h3>
+    <p>Сканер документов работает на основе технологии сканирования Google, выполняемой на устройстве (Google ML Kit, через Google Play Services). Согласно документации Google, отсканированные изображения обрабатываются на вашем устройстве и не отправляются на серверы Google для сканирования. Сам модуль сканера может доставляться или обновляться через Google Play Services — это отдельный системный компонент, подчиняющийся собственной политике конфиденциальности Google. У самого DocMax нет разрешения на интернет, и он не загружает ваши сканы куда-либо.</p>
+
+    <h3>Передача данных</h3>
+    <p>Разработчик не передаёт ваши данные никому, поскольку они не покидают устройство.</p>
+    <p>В DocMax есть функции «Поделиться» и «Открыть в другом приложении». При их использовании открывается стандартное окно «Поделиться» Android, и вы <strong>сами</strong> выбираете, какому приложению передать файл (например мессенджеру или почте). Этот процесс инициируете и контролируете вы; куда попадёт файл, зависит от выбранного приложения. Сам DocMax ничего не отправляет, а разработчик файл не видит и не получает.</p>
+
+    <h3>Хранение и удаление</h3>
+    <p>Ваши настройки и списки хранятся на устройстве, пока приложение установлено.</p>
+    <ul>
+      <li>Удалить настройки и списки недавних/избранных: очистите данные приложения в настройках Android или удалите приложение.</li>
+      <li>Файлы, созданные вами (в <code>Download/DocMax</code>), и ваши собственные документы не удаляются при удалении приложения — вы можете удалить их сами любым файловым менеджером.</li>
+    </ul>
+    <p>Поскольку нет ни аккаунта, ни сервера, копий ваших данных нигде за пределами устройства не остаётся.</p>
+
+    <h3>Безопасность</h3>
+    <p>Ваши настройки и списки хранятся в приватной области приложения, изолированной операционной системой Android от других приложений. Так как приложение не передаёт данные, перехватывать нечего.</p>
+
+    <h3>Дети</h3>
+    <p>DocMax — это инструмент для работы с документами общего назначения, он не предназначен для детей младше 13 лет, не содержит контента, рассчитанного на привлечение детей, и не собирает намеренно их данные.</p>
+
+    <h3>Сторонние сервисы</h3>
+    <p>Текущая версия DocMax не использует рекламные сети, сторонние аналитические сервисы или сторонние сервисы отчётов об ошибках. Просмотр документов, инструменты PDF, просмотр EPUB и Word/PowerPoint, а также сканер — всё работает на вашем устройстве.</p>
+
+    <h3>Изменения политики</h3>
+    <p>Если поведение приложения изменится так, что это затронет данную политику, страница будет обновлена, а дата вступления в силу изменена. Значимые изменения также будут описаны в примечаниях к выпуску в Google Play.</p>
+
+    <h3>Контакт</h3>
+    <p>Вопросы по политике: sadirboyprogrammer@gmail.com</p>
+  </section>
+
+  <footer>
+    DocMax - Document Manager — com.smaruf.docmax · Kitoblar Olami | Smaruf
+  </footer>
+
+</div>
+
+</body>
+</html>
