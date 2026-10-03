@@ -97,21 +97,21 @@
   <section id="en" class="section-lang" lang="en">
     <h1>Privacy Policy for DocMax - Document Manager</h1>
     <div class="meta">
-      <div><strong>Effective date:</strong> 2 October 2026</div>
+      <div><strong>Effective date:</strong> 3 October 2026</div>
       <div><strong>Developer:</strong> Kitoblar Olami | Smaruf</div>
       <div><strong>Contact:</strong> sadirboyprogrammer@gmail.com</div>
       <div><strong>Application ID:</strong> com.smaruf.docmax</div>
     </div>
 
     <h3>Summary</h3>
-    <p>DocMax is an offline document manager, reader and scanner. It supports PDF, Word, PowerPoint, Excel, EPUB, TXT and image files. The application does not create user accounts, does not require registration and does not show ads. It does not include the <code>INTERNET</code> permission, which means the application itself is technically unable to transmit any of your files or information off your device. Everything stays on your phone.</p>
+    <p>DocMax is an offline document manager, reader and scanner. It supports PDF, Word, PowerPoint, Excel, EPUB, TXT and image files. The application does not create user accounts, does not require registration and does not show ads. DocMax does not send or upload anything over the network — the app's own code makes no internet requests. The <code>INTERNET</code> permission is declared only because the built-in EPUB reader (an in-app browser engine) does not open without it. Everything stays on your phone.</p>
 
     <h3>Information the app stores on your device</h3>
     <p>The following is stored locally, in storage controlled by the app, and is never sent to the developer:</p>
     <ul>
       <li><strong>Application settings:</strong> language, theme (light/dark), default-reader choice and similar preferences.</li>
       <li><strong>Recent and favorite files:</strong> stored as file paths (references to where a file is on your device), used to show your recently opened and favorited documents. Only a limited number of recent items is kept.</li>
-      <li><strong>Files you create with the tools:</strong> results such as merged, split, compressed or converted PDFs, and scanned documents, are saved to the <code>Documents/DocMax</code> folder on your device. They remain on your device under your control.</li>
+      <li><strong>Files you create with the tools:</strong> results such as merged, split, compressed or converted PDFs, and scanned documents, are saved to the <code>Documents/DocMax</code> folder on your device, organized into subfolders by type (for example PDF, Images, Text). They remain on your device under your control.</li>
     </ul>
 
     <h3>Information the app does NOT collect</h3>
@@ -129,7 +129,9 @@
     <ul>
       <li><strong>All files access (<code>MANAGE_EXTERNAL_STORAGE</code>, Android 11+):</strong> so the "Files" screen can find and list your documents (PDF, Word, PPTX, EPUB, TXT, Excel) from all folders on your device — Downloads, messenger folders, other app folders and so on — in one place. This is the core function of a document manager. It is requested only when you tap "Allow"; the app does not request it automatically on launch, and you can decline or revoke it at any time in Android settings.</li>
       <li><strong>Storage (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>):</strong> on older Android versions, used to read your documents and to save tool results to your device.</li>
-      <li><strong>Camera (<code>CAMERA</code>):</strong> used for the document scanner and other camera-based features (see below). The camera is used only while you are actively using those features.</li>
+      <li><strong>Camera (<code>CAMERA</code>):</strong> used for the document scanner and other camera-based features (see below). The camera is used only while you are actively using those features. No audio is recorded — the app has no microphone permission.</li>
+      <li><strong>Internet (<code>INTERNET</code>):</strong> declared only because the built-in EPUB reader (an in-app browser engine) requires it to open EPUB files. The app's own code makes no network requests and sends or uploads nothing.</li>
+      <li><strong>Network state and wake lock (<code>ACCESS_NETWORK_STATE</code>, <code>WAKE_LOCK</code>):</strong> added by the libraries the app uses; wake lock only keeps the device awake during an active task.</li>
     </ul>
     <p>These permissions are used only for the purposes described above.</p>
 
@@ -141,7 +143,7 @@
     </ul>
 
     <h3>Document scanner and Google Play Services</h3>
-    <p>The document scanner is provided by Google's on-device document-scanning technology (Google ML Kit, via Google Play Services). According to Google's documentation, scanned images are processed on your device and are not sent to Google's servers for scanning. The scanner module itself may be delivered or updated by Google Play Services, which is a separate system component governed by Google's own privacy policy. DocMax itself has no internet permission and does not upload your scans.</p>
+    <p>The document scanner is provided by Google's on-device document-scanning technology (Google ML Kit, via Google Play Services). According to Google's documentation, scanned images are processed on your device and are not sent to Google's servers for scanning. The scanner module itself may be delivered or updated by Google Play Services, which is a separate system component governed by Google's own privacy policy. DocMax's own code makes no network requests and does not upload your scans.</p>
 
     <h3>Sharing</h3>
     <p>The developer does not share your information with anyone, because it never leaves your device.</p>
@@ -175,21 +177,21 @@
   <section id="uz" class="section-lang" lang="uz">
     <h2>DocMax - Document Manager ilovasining maxfiylik siyosati</h2>
     <div class="meta">
-      <div><strong>Kuchga kirgan sana:</strong> 2-oktabr 2026</div>
+      <div><strong>Kuchga kirgan sana:</strong> 3-oktabr 2026</div>
       <div><strong>Ishlab chiquvchi:</strong> Kitoblar Olami | Smaruf</div>
       <div><strong>Aloqa:</strong> sadirboyprogrammer@gmail.com</div>
       <div><strong>Ilova identifikatori:</strong> com.smaruf.docmax</div>
     </div>
 
     <h3>Qisqacha</h3>
-    <p>DocMax — oflayn hujjat boshqaruvchi, o‘qigich va skaner. PDF, Word, PowerPoint, Excel, EPUB, TXT va rasm formatlarini qo‘llab-quvvatlaydi. Ilovaning foydalanuvchi hisobi yo‘q, ro‘yxatdan o‘tish talab qilinmaydi va reklama ko‘rsatilmaydi. Ilovada <code>INTERNET</code> ruxsati umuman mavjud emas, ya'ni ilovaning o‘zi texnik jihatdan sizning fayllaringiz yoki ma'lumotlaringizni qurilmangizdan tashqariga yubora olmaydi. Hammasi telefoningizda qoladi.</p>
+    <p>DocMax — oflayn hujjat boshqaruvchi, o‘qigich va skaner. PDF, Word, PowerPoint, Excel, EPUB, TXT va rasm formatlarini qo‘llab-quvvatlaydi. Ilovaning foydalanuvchi hisobi yo‘q, ro‘yxatdan o‘tish talab qilinmaydi va reklama ko‘rsatilmaydi. DocMax tarmoq orqali hech narsa yubormaydi yoki yuklamaydi — ilovaning o‘z kodi hech qanday internet so‘rovi qilmaydi. <code>INTERNET</code> ruxsati faqat o‘rnatilgan EPUB ko‘rgich (ichki brauzer dvigateli) uni talab qilgani uchun e'lon qilingan. Hammasi telefoningizda qoladi.</p>
 
     <h3>Ilova qurilmangizda nimani saqlaydi</h3>
     <p>Quyidagilar faqat shu ilova boshqaradigan xotirada saqlanadi va hech qachon ishlab chiquvchiga yuborilmaydi:</p>
     <ul>
       <li><strong>Ilova sozlamalari:</strong> til, mavzu (yorug‘/tungi), standart o‘qigich tanlovi va shunga o‘xshash sozlamalar.</li>
       <li><strong>So‘nggi ochilganlar va sevimlilar:</strong> fayl yo‘llari (faylning qurilmangizda qayerdaligiga ishora) sifatida saqlanadi va so‘nggi ochilgan hamda sevimli hujjatlaringizni ko‘rsatish uchun ishlatiladi. So‘nggilardan faqat cheklangan soni saqlanadi.</li>
-      <li><strong>Vositalar bilan yaratgan fayllaringiz:</strong> birlashtirilgan, bo‘lingan, siqilgan yoki aylantirilgan PDF hamda skaner natijalari qurilmangizdagi <code>Documents/DocMax</code> papkasiga saqlanadi va sizning nazoratingizda qoladi.</li>
+      <li><strong>Vositalar bilan yaratgan fayllaringiz:</strong> birlashtirilgan, bo‘lingan, siqilgan yoki aylantirilgan PDF hamda skaner natijalari qurilmangizdagi <code>Documents/DocMax</code> papkasiga, tur bo‘yicha ichki papkalarga (masalan PDF, Rasmlar, Matnlar) ajratib saqlanadi va sizning nazoratingizda qoladi.</li>
     </ul>
 
     <h3>Ilova NIMANI yig‘maydi</h3>
@@ -207,7 +209,9 @@
     <ul>
       <li><strong>Barcha fayllarga kirish (<code>MANAGE_EXTERNAL_STORAGE</code>, Android 11+):</strong> "Fayllar" ekrani qurilmangizdagi barcha papkalardan — Yuklab olinganlar, messenjer papkalari, boshqa ilova papkalari va h.k. — hujjatlaringizni (PDF, Word, PPTX, EPUB, TXT, Excel) topib, bitta ro‘yxatda ko‘rsatishi uchun. Bu — hujjat boshqaruvchining asosiy vazifasi. Ruxsat faqat siz "Ruxsat berish"ni bosganingizda so‘raladi; ilova ochilishi bilan avtomatik so‘ramaydi, va uni Android sozlamalaridan istalgan payt rad etishingiz yoki bekor qilishingiz mumkin.</li>
       <li><strong>Xotira (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>):</strong> eski Android versiyalarida hujjatlaringizni o‘qish va vositalar natijasini qurilmaga saqlash uchun.</li>
-      <li><strong>Kamera (<code>CAMERA</code>):</strong> hujjat skaneri va boshqa kamera asosidagi funksiyalar uchun (pastga qarang). Kamera faqat siz o‘sha funksiyalardan foydalanayotganingizda ishlaydi.</li>
+      <li><strong>Kamera (<code>CAMERA</code>):</strong> hujjat skaneri va boshqa kamera asosidagi funksiyalar uchun (pastga qarang). Kamera faqat siz o‘sha funksiyalardan foydalanayotganingizda ishlaydi. Ovoz yozilmaydi — ilovada mikrofon ruxsati yo‘q.</li>
+      <li><strong>Internet (<code>INTERNET</code>):</strong> faqat o‘rnatilgan EPUB ko‘rgich (ichki brauzer dvigateli) EPUB fayllarini ochish uchun talab qilgani uchun e'lon qilingan. Ilovaning o‘z kodi tarmoqqa so‘rov yubormaydi va hech narsa uzatmaydi yoki yuklamaydi.</li>
+      <li><strong>Tarmoq holati va wake lock (<code>ACCESS_NETWORK_STATE</code>, <code>WAKE_LOCK</code>):</strong> ilova ishlatadigan kutubxonalar tomonidan qo‘shilgan; wake lock faqat jarayon davom etayotganda qurilmani uyquga ketkazmaydi.</li>
     </ul>
     <p>Bu ruxsatlar yuqorida yozilganidan boshqa maqsadda ishlatilmaydi.</p>
 
@@ -219,7 +223,7 @@
     </ul>
 
     <h3>Hujjat skaneri va Google Play Services</h3>
-    <p>Hujjat skaneri Google'ning qurilmada ishlaydigan skaner texnologiyasi (Google ML Kit, Google Play Services orqali) yordamida ishlaydi. Google hujjatlariga ko‘ra, skanerlangan tasvirlar qurilmangizda qayta ishlanadi va skanerlash uchun Google serverlariga yuborilmaydi. Skaner moduli Google Play Services tomonidan yetkazilishi yoki yangilanishi mumkin — bu alohida tizim komponenti bo‘lib, Google'ning o‘z maxfiylik siyosatiga bo‘ysunadi. DocMax'ning o‘zida internet ruxsati yo‘q va u skaneringizni hech qayerga yuklamaydi.</p>
+    <p>Hujjat skaneri Google'ning qurilmada ishlaydigan skaner texnologiyasi (Google ML Kit, Google Play Services orqali) yordamida ishlaydi. Google hujjatlariga ko‘ra, skanerlangan tasvirlar qurilmangizda qayta ishlanadi va skanerlash uchun Google serverlariga yuborilmaydi. Skaner moduli Google Play Services tomonidan yetkazilishi yoki yangilanishi mumkin — bu alohida tizim komponenti bo‘lib, Google'ning o‘z maxfiylik siyosatiga bo‘ysunadi. DocMax'ning o‘z kodi tarmoqqa so‘rov yubormaydi va skaneringizni hech qayerga yuklamaydi.</p>
 
     <h3>Ulashish</h3>
     <p>Ishlab chiquvchi ma'lumotlaringizni hech kim bilan ulashmaydi, chunki ular qurilmangizdan umuman chiqmaydi.</p>
@@ -253,21 +257,21 @@
   <section id="ru" class="section-lang" lang="ru">
     <h2>Политика конфиденциальности приложения DocMax - Document Manager</h2>
     <div class="meta">
-      <div><strong>Дата вступления в силу:</strong> 2 октября 2026</div>
+      <div><strong>Дата вступления в силу:</strong> 3 октября 2026</div>
       <div><strong>Разработчик:</strong> Kitoblar Olami | Smaruf</div>
       <div><strong>Контакт:</strong> sadirboyprogrammer@gmail.com</div>
       <div><strong>Идентификатор приложения:</strong> com.smaruf.docmax</div>
     </div>
 
     <h3>Кратко</h3>
-    <p>DocMax — офлайн-приложение для управления документами, их просмотра и сканирования. Поддерживает PDF, Word, PowerPoint, Excel, EPUB, TXT и изображения. У приложения нет учётных записей, не требуется регистрация и не показывается реклама. В приложении отсутствует разрешение <code>INTERNET</code>, то есть само приложение технически не способно передать ваши файлы или данные за пределы устройства. Всё остаётся на вашем телефоне.</p>
+    <p>DocMax — офлайн-приложение для управления документами, их просмотра и сканирования. Поддерживает PDF, Word, PowerPoint, Excel, EPUB, TXT и изображения. У приложения нет учётных записей, не требуется регистрация и не показывается реклама. DocMax ничего не отправляет и не загружает по сети — собственный код приложения не выполняет сетевых запросов. Разрешение <code>INTERNET</code> объявлено только потому, что встроенная читалка EPUB (движок браузера в приложении) без него не открывается. Всё остаётся на вашем телефоне.</p>
 
     <h3>Что приложение хранит на устройстве</h3>
     <p>Следующее хранится локально, в хранилище приложения, и никогда не отправляется разработчику:</p>
     <ul>
       <li><strong>Настройки приложения:</strong> язык, тема (светлая/тёмная), выбор приложения по умолчанию и подобные настройки.</li>
       <li><strong>Недавние и избранные файлы:</strong> хранятся как пути к файлам (ссылки на расположение файла на устройстве) и используются для показа недавно открытых и избранных документов. Хранится лишь ограниченное число недавних элементов.</li>
-      <li><strong>Файлы, созданные инструментами:</strong> объединённые, разделённые, сжатые или конвертированные PDF, а также результаты сканирования сохраняются в папку <code>Documents/DocMax</code> на устройстве и остаются под вашим контролем.</li>
+      <li><strong>Файлы, созданные инструментами:</strong> объединённые, разделённые, сжатые или конвертированные PDF, а также результаты сканирования сохраняются в папку <code>Documents/DocMax</code> на устройстве, с разбивкой по вложенным папкам по типу (например PDF, Изображения, Текст), и остаются под вашим контролем.</li>
     </ul>
 
     <h3>Что приложение НЕ собирает</h3>
@@ -285,7 +289,9 @@
     <ul>
       <li><strong>Доступ ко всем файлам (<code>MANAGE_EXTERNAL_STORAGE</code>, Android 11+):</strong> чтобы экран «Файлы» мог находить и показывать ваши документы (PDF, Word, PPTX, EPUB, TXT, Excel) из всех папок устройства — «Загрузки», папки мессенджеров, папки других приложений и т. д. — в одном месте. Это основная функция менеджера документов. Разрешение запрашивается только когда вы нажимаете «Разрешить»; приложение не запрашивает его автоматически при запуске, и вы можете отклонить или отозвать его в настройках Android в любой момент.</li>
       <li><strong>Хранилище (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>):</strong> на старых версиях Android — для чтения ваших документов и сохранения результатов инструментов на устройство.</li>
-      <li><strong>Камера (<code>CAMERA</code>):</strong> для сканера документов и других функций на основе камеры (см. ниже). Камера используется только когда вы активно пользуетесь этими функциями.</li>
+      <li><strong>Камера (<code>CAMERA</code>):</strong> для сканера документов и других функций на основе камеры (см. ниже). Камера используется только когда вы активно пользуетесь этими функциями. Звук не записывается — у приложения нет разрешения на микрофон.</li>
+      <li><strong>Интернет (<code>INTERNET</code>):</strong> объявлено только потому, что встроенная читалка EPUB (движок браузера в приложении) требует его для открытия файлов EPUB. Собственный код приложения не выполняет сетевых запросов и ничего не передаёт и не загружает.</li>
+      <li><strong>Состояние сети и wake lock (<code>ACCESS_NETWORK_STATE</code>, <code>WAKE_LOCK</code>):</strong> добавлены библиотеками, которые использует приложение; wake lock лишь не даёт устройству заснуть во время выполнения задачи.</li>
     </ul>
     <p>Эти разрешения не используются ни для каких других целей.</p>
 
@@ -297,7 +303,7 @@
     </ul>
 
     <h3>Сканер документов и Google Play Services</h3>
-    <p>Сканер документов работает на основе технологии сканирования Google, выполняемой на устройстве (Google ML Kit, через Google Play Services). Согласно документации Google, отсканированные изображения обрабатываются на вашем устройстве и не отправляются на серверы Google для сканирования. Сам модуль сканера может доставляться или обновляться через Google Play Services — это отдельный системный компонент, подчиняющийся собственной политике конфиденциальности Google. У самого DocMax нет разрешения на интернет, и он не загружает ваши сканы куда-либо.</p>
+    <p>Сканер документов работает на основе технологии сканирования Google, выполняемой на устройстве (Google ML Kit, через Google Play Services). Согласно документации Google, отсканированные изображения обрабатываются на вашем устройстве и не отправляются на серверы Google для сканирования. Сам модуль сканера может доставляться или обновляться через Google Play Services — это отдельный системный компонент, подчиняющийся собственной политике конфиденциальности Google. Собственный код DocMax не выполняет сетевых запросов и не загружает ваши сканы куда-либо.</p>
 
     <h3>Передача данных</h3>
     <p>Разработчик не передаёт ваши данные никому, поскольку они не покидают устройство.</p>
