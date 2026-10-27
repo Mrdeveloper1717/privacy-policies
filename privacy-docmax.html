@@ -104,7 +104,7 @@
     </div>
 
     <h3>Summary</h3>
-    <p>DocMax is an offline document manager, reader and scanner. It supports PDF, Word, PowerPoint, Excel, CSV, EPUB, TXT and image files. The application does not create user accounts, does not require registration and does not show ads. DocMax does not send or upload anything over the network — the app's own code makes no internet requests. Every feature works without an internet connection. The <code>INTERNET</code> permission appears in the Android manifest only because it is merged in from a third-party library (the Google ML Kit document scanner); the app's own code does not use it, and the EPUB and Word viewers block all network access. Your documents, scans and settings are never sent anywhere. Everything you work with stays on your phone.</p>
+    <p>DocMax is an offline document manager, reader and scanner. It supports PDF, Word, PowerPoint, Excel, CSV, EPUB, TXT and image files. The application does not create user accounts, does not require registration and does not show ads. DocMax does not send or upload your files over the network — the app's own code makes no internet requests. Every feature works without an internet connection. The <code>INTERNET</code> permission appears in the Android manifest only because it is merged in from a third-party library (the Google ML Kit document scanner); the app's own code does not use it, and the EPUB and Word viewers block all network access. Your documents, scans and settings are never sent anywhere. Everything you work with stays on your phone. The only exception is limited technical diagnostic information that Google's scanner component may send to Google, described in "Document scanner and Google Play Services" below; it never includes your documents or scans.</p>
 
     <h3>Information the app stores on your device</h3>
     <p>The following is stored locally, in storage controlled by the app, and is never sent to the developer:</p>
@@ -129,8 +129,8 @@
     <ul>
       <li><strong>All files access (<code>MANAGE_EXTERNAL_STORAGE</code>, Android 11+):</strong> so the "Files" screen can find and list your documents (PDF, Word, PPTX, EPUB, TXT, Excel, CSV) from all folders on your device — Downloads, messenger folders, other app folders and so on — in one place. This is the core function of a document manager. It is requested only when you tap "Allow"; the app does not request it automatically on launch, and you can decline or revoke it at any time in Android settings.</li>
       <li><strong>Storage (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>):</strong> on older Android versions, used to read your documents and to save tool results to your device.</li>
-      <li><strong>Camera (<code>CAMERA</code>):</strong> used for the document scanner and other camera-based features (see below). The camera is used only while you are actively using those features. No audio is recorded — the app has no microphone permission.</li>
-      <li><strong>Internet (<code>INTERNET</code>):</strong> added to the manifest by a third-party library (Google ML Kit document scanner). DocMax works fully offline and its own code makes no network requests; the EPUB and Word viewers block all network access.</li>
+      <li><strong>Camera (<code>CAMERA</code>):</strong> used for AR Tracing; the document scanner uses the camera through Google's scanner component (see below). The camera is used only while you are actively using those features. No audio is recorded — the app has no microphone permission.</li>
+      <li><strong>Internet (<code>INTERNET</code>):</strong> added to the manifest by a third-party library (Google ML Kit document scanner), which may use it to send the technical diagnostics described below. DocMax works fully offline and its own code makes no network requests; the EPUB and Word viewers block all network access.</li>
       <li><strong>Network state (<code>ACCESS_NETWORK_STATE</code>):</strong> added by the libraries the app uses; the app's own code does not use it.</li>
     </ul>
     <p>These permissions are used only for the purposes described above.</p>
@@ -144,6 +144,7 @@
 
     <h3>Document scanner and Google Play Services</h3>
     <p>The document scanner is provided by Google's on-device document-scanning technology (Google ML Kit, via Google Play Services). According to Google's documentation, scanned images are processed on your device and are not sent to Google's servers for scanning. The scanner module itself may be delivered or updated by Google Play Services, which is a separate system component governed by Google's own privacy policy. DocMax's own code makes no network requests and does not upload your scans.</p>
+    <p>The Google ML Kit library may send limited technical diagnostic information to Google, such as device and app information (for example device model, OS version and app package name), installation identifiers that are not intended to identify you personally, performance metrics, feature usage events and error codes. According to Google, this data is used for diagnostics and usage analytics, is encrypted in transit (HTTPS) and is not transferred to third parties. This information does not include your documents, scans or their contents. The developer does not receive this data.</p>
 
     <h3>Sharing</h3>
     <p>The developer does not share your information with anyone, because it never leaves your device.</p>
@@ -155,16 +156,16 @@
       <li>To remove the app's settings and recent/favorite lists: clear the app's data in Android settings, or uninstall the app.</li>
       <li>Files you created (in <code>Documents/DocMax</code>) and your own documents are not deleted when you uninstall — you can delete them yourself with any file manager.</li>
     </ul>
-    <p>Because there is no account and no server, no copy of your information remains anywhere off your device.</p>
+    <p>Because there is no account and no server operated by the developer, no copy of your information is kept by the developer. Technical diagnostic data sent by Google's scanner component is held by Google under Google's own privacy policy and retention practices, and the developer cannot access or delete it.</p>
 
     <h3>Security</h3>
-    <p>Your settings and lists are stored in the application's private storage area, which the Android operating system isolates from other applications. Because the app transmits no data, there is no transmission to intercept.</p>
+    <p>Your settings and lists are stored in the application's private storage area, which the Android operating system isolates from other applications. The app's own code transmits no data, so there is nothing of yours to intercept; the diagnostic information sent by Google's scanner component is encrypted in transit.</p>
 
     <h3>Children</h3>
     <p>DocMax is a general-purpose document tool and is not directed at children under 13. It does not contain content designed to appeal to children and does not knowingly collect information from them.</p>
 
     <h3>Third-party services</h3>
-    <p>The current version of DocMax does not use advertising networks, third-party analytics services or third-party crash-reporting services. The document rendering, PDF tools, EPUB and Word/PowerPoint viewing, and the scanner all run on your device.</p>
+    <p>The current version of DocMax does not use advertising networks, third-party analytics services or third-party crash-reporting services of its own. The only third-party component is the Google ML Kit document scanner (via Google Play Services), which may send the limited technical diagnostics described above. The document rendering, PDF tools, EPUB and Word/PowerPoint viewing, and the scanning itself all run on your device.</p>
 
     <h3>Changes to this policy</h3>
     <p>If the application's behaviour changes in a way that affects this policy, this page will be updated and the effective date above will be changed. Significant changes will also be described in the app's release notes on Google Play.</p>
@@ -184,7 +185,7 @@
     </div>
 
     <h3>Qisqacha</h3>
-    <p>DocMax — oflayn hujjat boshqaruvchi, o‘qigich va skaner. PDF, Word, PowerPoint, Excel, CSV, EPUB, TXT va rasm formatlarini qo‘llab-quvvatlaydi. Ilovaning foydalanuvchi hisobi yo‘q, ro‘yxatdan o‘tish talab qilinmaydi va reklama ko‘rsatilmaydi. DocMax tarmoq orqali hech narsa yubormaydi yoki yuklamaydi — ilovaning o‘z kodi hech qanday internet so‘rovi qilmaydi. Barcha funksiyalar internetsiz ishlaydi. <code>INTERNET</code> ruxsati Android manifestida faqat uchinchi tomon kutubxonasi (Google ML Kit hujjat skaneri) orqali qo'shiladi; ilovaning o'z kodi uni ishlatmaydi, EPUB va Word ko'rgichlari esa tarmoqqa chiqishni butunlay bloklaydi. Hujjatlaringiz, skanlaringiz va sozlamalaringiz hech qayerga yuborilmaydi. Siz ishlaydigan hamma narsa telefoningizda qoladi.</p>
+    <p>DocMax — oflayn hujjat boshqaruvchi, o‘qigich va skaner. PDF, Word, PowerPoint, Excel, CSV, EPUB, TXT va rasm formatlarini qo‘llab-quvvatlaydi. Ilovaning foydalanuvchi hisobi yo‘q, ro‘yxatdan o‘tish talab qilinmaydi va reklama ko‘rsatilmaydi. DocMax fayllaringizni tarmoq orqali yubormaydi yoki yuklamaydi — ilovaning o‘z kodi hech qanday internet so‘rovi qilmaydi. Barcha funksiyalar internetsiz ishlaydi. <code>INTERNET</code> ruxsati Android manifestida faqat uchinchi tomon kutubxonasi (Google ML Kit hujjat skaneri) orqali qo'shiladi; ilovaning o'z kodi uni ishlatmaydi, EPUB va Word ko'rgichlari esa tarmoqqa chiqishni butunlay bloklaydi. Hujjatlaringiz, skanlaringiz va sozlamalaringiz hech qayerga yuborilmaydi. Siz ishlaydigan hamma narsa telefoningizda qoladi. Yagona istisno — Google skaner komponenti Google'ga yuborishi mumkin bo‘lgan cheklangan texnik diagnostika ma'lumotlari; ular quyida "Hujjat skaneri va Google Play Services" bo‘limida tushuntirilgan va hech qachon hujjatlaringiz yoki skanlaringizni o‘z ichiga olmaydi.</p>
 
     <h3>Ilova qurilmangizda nimani saqlaydi</h3>
     <p>Quyidagilar faqat shu ilova boshqaradigan xotirada saqlanadi va hech qachon ishlab chiquvchiga yuborilmaydi:</p>
@@ -209,8 +210,8 @@
     <ul>
       <li><strong>Barcha fayllarga kirish (<code>MANAGE_EXTERNAL_STORAGE</code>, Android 11+):</strong> "Fayllar" ekrani qurilmangizdagi barcha papkalardan — Yuklab olinganlar, messenjer papkalari, boshqa ilova papkalari va h.k. — hujjatlaringizni (PDF, Word, PPTX, EPUB, TXT, Excel, CSV) topib, bitta ro‘yxatda ko‘rsatishi uchun. Bu — hujjat boshqaruvchining asosiy vazifasi. Ruxsat faqat siz "Ruxsat berish"ni bosganingizda so‘raladi; ilova ochilishi bilan avtomatik so‘ramaydi, va uni Android sozlamalaridan istalgan payt rad etishingiz yoki bekor qilishingiz mumkin.</li>
       <li><strong>Xotira (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>):</strong> eski Android versiyalarida hujjatlaringizni o‘qish va vositalar natijasini qurilmaga saqlash uchun.</li>
-      <li><strong>Kamera (<code>CAMERA</code>):</strong> hujjat skaneri va boshqa kamera asosidagi funksiyalar uchun (pastga qarang). Kamera faqat siz o‘sha funksiyalardan foydalanayotganingizda ishlaydi. Ovoz yozilmaydi — ilovada mikrofon ruxsati yo‘q.</li>
-      <li><strong>Internet (<code>INTERNET</code>):</strong> manifestga uchinchi tomon kutubxonasi (Google ML Kit hujjat skaneri) tomonidan qo'shiladi. DocMax to'liq oflayn ishlaydi va uning o'z kodi tarmoqqa so'rov yubormaydi; EPUB va Word ko'rgichlari tarmoqni bloklaydi.</li>
+      <li><strong>Kamera (<code>CAMERA</code>):</strong> AR Tracing uchun; hujjat skaneri kamerani Google'ning skaner komponenti orqali ishlatadi (pastga qarang). Kamera faqat siz o‘sha funksiyalardan foydalanayotganingizda ishlaydi. Ovoz yozilmaydi — ilovada mikrofon ruxsati yo‘q.</li>
+      <li><strong>Internet (<code>INTERNET</code>):</strong> manifestga uchinchi tomon kutubxonasi (Google ML Kit hujjat skaneri) tomonidan qo'shiladi; u pastda tushuntirilgan texnik diagnostikani yuborish uchun undan foydalanishi mumkin. DocMax to'liq oflayn ishlaydi va uning o'z kodi tarmoqqa so'rov yubormaydi; EPUB va Word ko'rgichlari tarmoqni bloklaydi.</li>
       <li><strong>Tarmoq holati (<code>ACCESS_NETWORK_STATE</code>):</strong> ilova ishlatadigan kutubxonalar tomonidan qo‘shilgan; ilovaning o‘z kodi uni ishlatmaydi.</li>
     </ul>
     <p>Bu ruxsatlar yuqorida yozilganidan boshqa maqsadda ishlatilmaydi.</p>
@@ -224,6 +225,7 @@
 
     <h3>Hujjat skaneri va Google Play Services</h3>
     <p>Hujjat skaneri Google'ning qurilmada ishlaydigan skaner texnologiyasi (Google ML Kit, Google Play Services orqali) yordamida ishlaydi. Google hujjatlariga ko‘ra, skanerlangan tasvirlar qurilmangizda qayta ishlanadi va skanerlash uchun Google serverlariga yuborilmaydi. Skaner moduli Google Play Services tomonidan yetkazilishi yoki yangilanishi mumkin — bu alohida tizim komponenti bo‘lib, Google'ning o‘z maxfiylik siyosatiga bo‘ysunadi. DocMax'ning o‘z kodi tarmoqqa so‘rov yubormaydi va skaneringizni hech qayerga yuklamaydi.</p>
+    <p>Google ML Kit kutubxonasi Google'ga cheklangan texnik diagnostika ma'lumotlarini yuborishi mumkin: qurilma va ilova haqidagi ma'lumot (masalan qurilma modeli, OT versiyasi va ilova paketi nomi), sizni shaxsan aniqlash uchun mo‘ljallanmagan o‘rnatish identifikatorlari, ishlash ko‘rsatkichlari, funksiyadan foydalanish hodisalari va xato kodlari. Google ma'lumotlariga ko‘ra, bu ma'lumotlar diagnostika va foydalanish tahlili uchun ishlatiladi, uzatishda shifrlanadi (HTTPS) va uchinchi tomonlarga berilmaydi. Bu ma'lumotlar hujjatlaringiz, skanlaringiz yoki ularning mazmunini o‘z ichiga olmaydi. Ishlab chiquvchi bu ma'lumotlarni olmaydi.</p>
 
     <h3>Ulashish</h3>
     <p>Ishlab chiquvchi ma'lumotlaringizni hech kim bilan ulashmaydi, chunki ular qurilmangizdan umuman chiqmaydi.</p>
@@ -235,16 +237,16 @@
       <li>Ilovaning sozlamalari va so‘nggi/sevimli ro‘yxatlarini o‘chirish: Android sozlamalarida ilova ma'lumotlarini tozalang yoki ilovani o‘chirib tashlang.</li>
       <li>Siz yaratgan fayllar (<code>Documents/DocMax</code> ichida) va o‘z hujjatlaringiz ilovani o‘chirganda o‘chmaydi — ularni istalgan fayl menejeri orqali o‘zingiz o‘chirishingiz mumkin.</li>
     </ul>
-    <p>Hisob ham, server ham bo‘lmagani uchun ma'lumotlaringizning nusxasi qurilmangizdan tashqarida hech qayerda qolmaydi.</p>
+    <p>Hisob ham, ishlab chiquvchi boshqaradigan server ham bo‘lmagani uchun ma'lumotlaringizning nusxasi ishlab chiquvchida saqlanmaydi. Google skaner komponenti yuborgan texnik diagnostika ma'lumotlari Google'ning o‘z maxfiylik siyosati va saqlash qoidalariga muvofiq Google'da saqlanadi; ishlab chiquvchi ularga kira olmaydi va o‘chira olmaydi.</p>
 
     <h3>Xavfsizlik</h3>
-    <p>Sozlamalaringiz va ro‘yxatlaringiz ilovaning shaxsiy xotira sohasida saqlanadi — Android uni boshqa ilovalardan ajratib turadi. Ilova hech narsa uzatmagani uchun uzatishni ushlab qolish ham mumkin emas.</p>
+    <p>Sozlamalaringiz va ro‘yxatlaringiz ilovaning shaxsiy xotira sohasida saqlanadi — Android uni boshqa ilovalardan ajratib turadi. Ilovaning o‘z kodi hech narsa uzatmagani uchun ushlab qolinadigan narsa yo‘q; Google skaner komponenti yuboradigan diagnostika ma'lumotlari uzatishda shifrlanadi.</p>
 
     <h3>Bolalar</h3>
     <p>DocMax — umumiy maqsadli hujjat vositasi bo‘lib, 13 yoshgacha bo‘lgan bolalarga mo‘ljallanmagan. Unda bolalarni jalb qilish uchun yaratilgan mazmun yo‘q va ulardan ataylab ma'lumot yig‘ilmaydi.</p>
 
     <h3>Uchinchi tomon xizmatlari</h3>
-    <p>DocMax'ning joriy versiyasida reklama tarmoqlari, uchinchi tomon analitika xizmatlari yoki uchinchi tomon xatolik hisobot xizmatlari ishlatilmaydi. Hujjatlarni ko‘rsatish, PDF vositalari, EPUB va Word/PowerPoint ko‘rish hamda skaner — barchasi qurilmangizda ishlaydi.</p>
+    <p>DocMax'ning joriy versiyasida o‘zining reklama tarmoqlari, uchinchi tomon analitika xizmatlari yoki uchinchi tomon xatolik hisobot xizmatlari ishlatilmaydi. Yagona uchinchi tomon komponenti — Google ML Kit hujjat skaneri (Google Play Services orqali) bo‘lib, u yuqorida tavsiflangan cheklangan texnik diagnostikani yuborishi mumkin. Hujjatlarni ko‘rsatish, PDF vositalari, EPUB va Word/PowerPoint ko‘rish hamda skanerlashning o‘zi — barchasi qurilmangizda ishlaydi.</p>
 
     <h3>Siyosatdagi o‘zgarishlar</h3>
     <p>Ilova xatti-harakati shu siyosatga ta'sir qiladigan darajada o‘zgarsa, ushbu sahifa yangilanadi va yuqoridagi sana o‘zgartiriladi. Muhim o‘zgarishlar Google Play'dagi yangilanish izohlarida ham ko‘rsatiladi.</p>
@@ -264,7 +266,7 @@
     </div>
 
     <h3>Кратко</h3>
-    <p>DocMax — офлайн-приложение для управления документами, их просмотра и сканирования. Поддерживает PDF, Word, PowerPoint, Excel, CSV, EPUB, TXT и изображения. У приложения нет учётных записей, не требуется регистрация и не показывается реклама. DocMax ничего не отправляет и не загружает по сети — собственный код приложения не выполняет сетевых запросов. Все функции работают без интернета. Разрешение <code>INTERNET</code> попадает в манифест Android только из сторонней библиотеки (сканер документов Google ML Kit); собственный код приложения его не использует, а просмотрщики EPUB и Word полностью блокируют доступ к сети. Ваши документы, сканы и настройки никуда не отправляются. Всё, с чем вы работаете, остаётся на вашем телефоне.</p>
+    <p>DocMax — офлайн-приложение для управления документами, их просмотра и сканирования. Поддерживает PDF, Word, PowerPoint, Excel, CSV, EPUB, TXT и изображения. У приложения нет учётных записей, не требуется регистрация и не показывается реклама. DocMax не отправляет и не загружает ваши файлы по сети — собственный код приложения не выполняет сетевых запросов. Все функции работают без интернета. Разрешение <code>INTERNET</code> попадает в манифест Android только из сторонней библиотеки (сканер документов Google ML Kit); собственный код приложения его не использует, а просмотрщики EPUB и Word полностью блокируют доступ к сети. Ваши документы, сканы и настройки никуда не отправляются. Всё, с чем вы работаете, остаётся на вашем телефоне. Единственное исключение — ограниченные технические диагностические данные, которые компонент сканера Google может отправлять в Google; они описаны ниже в разделе «Сканер документов и Google Play Services» и никогда не включают ваши документы или сканы.</p>
 
     <h3>Что приложение хранит на устройстве</h3>
     <p>Следующее хранится локально, в хранилище приложения, и никогда не отправляется разработчику:</p>
@@ -289,8 +291,8 @@
     <ul>
       <li><strong>Доступ ко всем файлам (<code>MANAGE_EXTERNAL_STORAGE</code>, Android 11+):</strong> чтобы экран «Файлы» мог находить и показывать ваши документы (PDF, Word, PPTX, EPUB, TXT, Excel, CSV) из всех папок устройства — «Загрузки», папки мессенджеров, папки других приложений и т. д. — в одном месте. Это основная функция менеджера документов. Разрешение запрашивается только когда вы нажимаете «Разрешить»; приложение не запрашивает его автоматически при запуске, и вы можете отклонить или отозвать его в настройках Android в любой момент.</li>
       <li><strong>Хранилище (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>):</strong> на старых версиях Android — для чтения ваших документов и сохранения результатов инструментов на устройство.</li>
-      <li><strong>Камера (<code>CAMERA</code>):</strong> для сканера документов и других функций на основе камеры (см. ниже). Камера используется только когда вы активно пользуетесь этими функциями. Звук не записывается — у приложения нет разрешения на микрофон.</li>
-      <li><strong>Интернет (<code>INTERNET</code>):</strong> добавляется в манифест сторонней библиотекой (сканер документов Google ML Kit). DocMax полностью работает офлайн, его собственный код не выполняет сетевых запросов; просмотрщики EPUB и Word блокируют доступ к сети.</li>
+      <li><strong>Камера (<code>CAMERA</code>):</strong> для AR Tracing; сканер документов использует камеру через компонент сканера Google (см. ниже). Камера используется только когда вы активно пользуетесь этими функциями. Звук не записывается — у приложения нет разрешения на микрофон.</li>
+      <li><strong>Интернет (<code>INTERNET</code>):</strong> добавляется в манифест сторонней библиотекой (сканер документов Google ML Kit), которая может использовать его для отправки технической диагностики, описанной ниже. DocMax полностью работает офлайн, его собственный код не выполняет сетевых запросов; просмотрщики EPUB и Word блокируют доступ к сети.</li>
       <li><strong>Состояние сети (<code>ACCESS_NETWORK_STATE</code>):</strong> добавлено библиотеками, которые использует приложение; собственный код приложения его не использует.</li>
     </ul>
     <p>Эти разрешения не используются ни для каких других целей.</p>
@@ -304,6 +306,7 @@
 
     <h3>Сканер документов и Google Play Services</h3>
     <p>Сканер документов работает на основе технологии сканирования Google, выполняемой на устройстве (Google ML Kit, через Google Play Services). Согласно документации Google, отсканированные изображения обрабатываются на вашем устройстве и не отправляются на серверы Google для сканирования. Сам модуль сканера может доставляться или обновляться через Google Play Services — это отдельный системный компонент, подчиняющийся собственной политике конфиденциальности Google. Собственный код DocMax не выполняет сетевых запросов и не загружает ваши сканы куда-либо.</p>
+    <p>Библиотека Google ML Kit может отправлять в Google ограниченные технические диагностические данные: сведения об устройстве и приложении (например, модель устройства, версия ОС и имя пакета приложения), идентификаторы установки, не предназначенные для вашей личной идентификации, показатели производительности, события использования функций и коды ошибок. По данным Google, эти данные используются для диагностики и анализа использования, шифруются при передаче (HTTPS) и не передаются третьим лицам. Эти данные не включают ваши документы, сканы или их содержимое. Разработчик эти данные не получает.</p>
 
     <h3>Передача данных</h3>
     <p>Разработчик не передаёт ваши данные никому, поскольку они не покидают устройство.</p>
@@ -315,16 +318,16 @@
       <li>Удалить настройки и списки недавних/избранных: очистите данные приложения в настройках Android или удалите приложение.</li>
       <li>Файлы, созданные вами (в <code>Documents/DocMax</code>), и ваши собственные документы не удаляются при удалении приложения — вы можете удалить их сами любым файловым менеджером.</li>
     </ul>
-    <p>Поскольку нет ни аккаунта, ни сервера, копий ваших данных нигде за пределами устройства не остаётся.</p>
+    <p>Поскольку нет ни аккаунта, ни сервера разработчика, копий ваших данных у разработчика не хранится. Технические диагностические данные, отправленные компонентом сканера Google, хранятся в Google в соответствии с собственной политикой конфиденциальности и правилами хранения Google; разработчик не имеет к ним доступа и не может их удалить.</p>
 
     <h3>Безопасность</h3>
-    <p>Ваши настройки и списки хранятся в приватной области приложения, изолированной операционной системой Android от других приложений. Так как приложение не передаёт данные, перехватывать нечего.</p>
+    <p>Ваши настройки и списки хранятся в приватной области приложения, изолированной операционной системой Android от других приложений. Собственный код приложения не передаёт данные, поэтому перехватывать нечего; диагностические данные, отправляемые компонентом сканера Google, шифруются при передаче.</p>
 
     <h3>Дети</h3>
     <p>DocMax — это инструмент для работы с документами общего назначения, он не предназначен для детей младше 13 лет, не содержит контента, рассчитанного на привлечение детей, и не собирает намеренно их данные.</p>
 
     <h3>Сторонние сервисы</h3>
-    <p>Текущая версия DocMax не использует рекламные сети, сторонние аналитические сервисы или сторонние сервисы отчётов об ошибках. Просмотр документов, инструменты PDF, просмотр EPUB и Word/PowerPoint, а также сканер — всё работает на вашем устройстве.</p>
+    <p>Текущая версия DocMax не использует собственные рекламные сети, сторонние аналитические сервисы или сторонние сервисы отчётов об ошибках. Единственный сторонний компонент — сканер документов Google ML Kit (через Google Play Services), который может отправлять ограниченную техническую диагностику, описанную выше. Просмотр документов, инструменты PDF, просмотр EPUB и Word/PowerPoint, а также само сканирование — всё работает на вашем устройстве.</p>
 
     <h3>Изменения политики</h3>
     <p>Если поведение приложения изменится так, что это затронет данную политику, страница будет обновлена, а дата вступления в силу изменена. Значимые изменения также будут описаны в примечаниях к выпуску в Google Play.</p>
