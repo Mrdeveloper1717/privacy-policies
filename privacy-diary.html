@@ -104,13 +104,22 @@
     </div>
 
     <h3>Summary</h3>
-    <p>Kundalik is a diary application. It has no user accounts or login. Your diary entries are stored only on your device and are not sent to us. The application is free and shows ads.</p>
+    <p>Kundalik is a diary application. It has no user accounts, no sign-up and no login, and it does not ask for your name, email, phone number, location, contacts, photos or files. Your diary entries are stored only on your device and are never sent to us or to any server.</p>
+    <p>The application is free and shows ads. It uses the internet only for ads, for checking the application's status, and for loading the “Our other projects” list.</p>
 
     <h3>Information the app stores on your device</h3>
-    <p>Your diary entries, the optional PIN (kept only as a hash) and the application's settings are stored locally on your device. We do not collect this data and do not have access to it.</p>
+    <p>The following information is stored locally, in storage that only this application can read, and is not sent to us:</p>
+    <ul>
+      <li><strong>Diary entries:</strong> the text you write, its title, date, mood, tags and favourite mark.</li>
+      <li><strong>PIN protection (optional):</strong> if you turn it on, the PIN itself is not stored; only a salted cryptographic hash of it is kept, together with your lock settings.</li>
+      <li><strong>Application settings:</strong> language and dark mode.</li>
+    </ul>
+
+    <h3>Information the app itself does NOT collect</h3>
+    <p>The application does not collect, request or access: name, email address, phone number or any account identifier; location or GPS data; contacts, SMS messages, call history, photos, camera or microphone; health or medical data; and it contains no analytics, telemetry or crash-reporting of its own. We do not read your diary entries and have no access to them. Third-party advertising services are described separately below.</p>
 
     <h3>Network requests</h3>
-    <p>The application uses the internet to show ads, to check its status and version on our server (<code>versionapps.magistrx.uz</code>) and to load the “Our other projects” list from GitHub. These requests do not contain your diary entries or personal information.</p>
+    <p>The application uses the internet to show ads, to check its status and version on our server (<code>versionapps.magistrx.uz</code>) and to load the “Our other projects” list from GitHub (<code>raw.githubusercontent.com</code>). These requests do not contain your diary entries or personal information such as your name or email.</p>
 
     <h3>Advertising and third-party services</h3>
     <p>The application uses the following third-party services, which may collect data under their own privacy policies:</p>
@@ -122,8 +131,25 @@
     <p><strong>Consent:</strong> in the European Economic Area, the United Kingdom and similar regions, the application shows a Google UMP consent form. You can change your choice later in <em>Settings → Privacy choices</em>.</p>
     <p><strong>Advertising ID:</strong> you can reset your advertising ID or opt out of personalised ads in Android settings (<em>Settings → Google → Ads</em>).</p>
 
+    <h3>Permissions</h3>
+    <ul>
+      <li><code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>: to load ads, check the application's status and know whether the internet is available.</li>
+      <li><code>AD_ID</code> (advertising ID): for the ad providers above.</li>
+    </ul>
+    <p>The application does not request access to the camera, microphone, location, contacts, storage or notifications. Advertising libraries may declare additional technical permissions needed to operate; these do not give access to your personal data.</p>
+
+    <h3>Sharing</h3>
+    <p>We do not sell or share the diary entries and settings stored on your device with anyone, because they never leave it. If you use the “Share the app” button, the application link is passed through your device's own share sheet to the app you choose; we do not receive it. Links in the application (for example, Telegram) open an external app or browser, which have their own privacy policies.</p>
+    <p>The application also lets you save a backup file or export your entries as text. When you use these, the file is written to the location you choose in the system file picker. This is started and controlled entirely by you; the developer neither sees nor receives the file.</p>
+
+    <h3>Backup</h3>
+    <p>If Android's automatic backup is enabled on your phone, the application's data may be backed up to <strong>your own Google account</strong> and restored when you set up a new device. This is a feature of the Android operating system; the backup belongs to your Google account and the developer has no access to it. You can disable it in your device's Google backup settings.</p>
+
     <h3>Data retention and deletion</h3>
-    <p>Your data stays on your device until you delete it in the application, uninstall the application or clear its data in Android settings. We keep no copy. For data collected by ad providers, please see their privacy pages listed above.</p>
+    <p>Your diary entries stay on your device until you delete them. You can delete an entry inside the application. To delete everything, uninstall the application or clear its data in Android settings (<em>Settings → Apps → Kundalik → Storage → Clear data</em>). Since there is no account and no server-side profile, no copy of your entries remains with us. For data collected by ad providers, please use their privacy pages listed above.</p>
+
+    <h3>Security</h3>
+    <p>Diary data is stored in the application's private storage area, which the Android operating system isolates from other applications. The optional PIN lock restricts access inside the application. The application's own network requests use HTTPS.</p>
 
     <h3>Children</h3>
     <p>The application is not directed at children under 13. It does not contain content designed to appeal to children and does not knowingly collect information from them. If you believe a child has provided information, please contact us.</p>
@@ -146,13 +172,22 @@
     </div>
 
     <h3>Qisqacha</h3>
-    <p>Kundalik — kundalik daftar ilovasi. Unda foydalanuvchi hisobi yoki kirish yo‘q. Kundalik yozuvlaringiz faqat qurilmangizda saqlanadi va bizga yuborilmaydi. Ilova bepul va reklama ko‘rsatadi.</p>
+    <p>Kundalik — kundalik daftar ilovasi. Unda foydalanuvchi hisobi, ro‘yxatdan o‘tish yoki kirish yo‘q, ism, email, telefon raqami, joylashuv, kontaktlar, rasm yoki fayllaringiz so‘ralmaydi. Kundalik yozuvlaringiz faqat qurilmangizda saqlanadi va bizga ham, boshqa hech qanday serverga ham yuborilmaydi.</p>
+    <p>Ilova bepul va reklama ko‘rsatadi. Internetdan faqat reklama, ilova holatini tekshirish va «Boshqa ilovalarimiz» ro‘yxatini yuklash uchun foydalanadi.</p>
 
     <h3>Ilova qurilmangizda nimani saqlaydi</h3>
-    <p>Kundalik yozuvlaringiz, ixtiyoriy parol (faqat hash ko‘rinishida) va ilova sozlamalari qurilmangizning o‘zida saqlanadi. Biz bu ma'lumotlarni yig‘maymiz va ularga kirish huquqiga ega emasmiz.</p>
+    <p>Quyidagi ma'lumotlar faqat shu ilova o‘qiy oladigan xotirada saqlanadi va bizga yuborilmaydi:</p>
+    <ul>
+      <li><strong>Kundalik yozuvlari:</strong> siz yozgan matn, sarlavha, sana, kayfiyat, teglar va sevimli belgisi.</li>
+      <li><strong>Parol himoyasi (ixtiyoriy):</strong> yoqsangiz, parolning o‘zi saqlanmaydi; faqat uning tuzlangan kriptografik hash qiymati va qulf sozlamalari saqlanadi.</li>
+      <li><strong>Ilova sozlamalari:</strong> til va qorong‘i rejim.</li>
+    </ul>
+
+    <h3>Ilovaning o‘zi NIMANI yig‘maydi</h3>
+    <p>Ism, email, telefon raqami yoki hisob identifikatori; joylashuv yoki GPS; kontaktlar, SMS, qo‘ng‘iroqlar tarixi, rasmlar, kamera, mikrofon; sog‘liq yoki tibbiy ma'lumotlar — bularning <strong>birortasi ham</strong> yig‘ilmaydi. Ilovaning o‘z analitika, telemetriya yoki xatoliklar haqidagi hisobot tizimi yo‘q. Biz kundalik yozuvlaringizni o‘qimaymiz va ularga kirish huquqiga ega emasmiz. Uchinchi tomon reklama xizmatlari haqida pastda alohida yozilgan.</p>
 
     <h3>Internet orqali yuboriladigan so‘rovlar</h3>
-    <p>Ilova internetdan reklamani ko‘rsatish, o‘z serverimizda (<code>versionapps.magistrx.uz</code>) ilova holati va versiyasini tekshirish hamda GitHub'dan «Boshqa ilovalarimiz» ro‘yxatini yuklash uchun foydalanadi. Bu so‘rovlarda kundalik yozuvlaringiz yoki shaxsiy ma'lumotlaringiz yuborilmaydi.</p>
+    <p>Ilova internetdan reklamani ko‘rsatish, o‘z serverimizda (<code>versionapps.magistrx.uz</code>) ilova holati va versiyasini tekshirish hamda GitHub'dan (<code>raw.githubusercontent.com</code>) «Boshqa ilovalarimiz» ro‘yxatini yuklash uchun foydalanadi. Bu so‘rovlarda kundalik yozuvlaringiz yoki ism, pochta kabi shaxsiy ma'lumotlaringiz yuborilmaydi.</p>
 
     <h3>Reklama va uchinchi tomon xizmatlari</h3>
     <p>Ilova quyidagi uchinchi tomon xizmatlaridan foydalanadi. Ular o‘z maxfiylik siyosatlariga muvofiq ma'lumot to‘plashi mumkin:</p>
@@ -164,8 +199,25 @@
     <p><strong>Rozilik:</strong> Yevropa Iqtisodiy Hududi, Buyuk Britaniya va shunga o‘xshash hududlarda ilova Google UMP orqali rozilik oynasini ko‘rsatadi. Tanlovingizni keyinroq <em>Sozlamalar → Maxfiylik tanlovlari</em> bo‘limidan o‘zgartirishingiz mumkin.</p>
     <p><strong>Reklama identifikatori:</strong> Android sozlamalarida (<em>Sozlamalar → Google → Reklamalar</em>) reklama identifikatorini tiklash yoki shaxsiylashtirilgan reklamadan voz kechishingiz mumkin.</p>
 
+    <h3>Ruxsatlar</h3>
+    <ul>
+      <li><code>INTERNET</code> va <code>ACCESS_NETWORK_STATE</code>: reklamani yuklash, ilova holatini tekshirish va internet borligini bilish uchun.</li>
+      <li><code>AD_ID</code> (reklama identifikatori): yuqoridagi reklama xizmatlari uchun.</li>
+    </ul>
+    <p>Ilova kamera, mikrofon, joylashuv, kontaktlar, xotira yoki bildirishnomalarga kirish ruxsatini so‘ramaydi. Reklama kutubxonalari o‘z ishlashi uchun qo‘shimcha texnik ruxsatlarni e'lon qilishi mumkin; ular orqali shaxsiy ma'lumotlaringizga kirilmaydi.</p>
+
+    <h3>Ulashish</h3>
+    <p>Qurilmangizdagi kundalik yozuvlari va sozlamalarni biz hech kimga sotmaymiz va ulashmaymiz, chunki ular qurilmadan chiqmaydi. «Ilovani ulashish» tugmasini bossangiz, ilova havolasi qurilmangizning o‘zidagi «Ulashish» oynasi orqali siz tanlagan ilovaga yuboriladi; biz uni olmaymiz. Ilovadagi havolalar (masalan, Telegram) tashqi ilova yoki brauzerni ochadi; ularning maxfiylik siyosati alohida.</p>
+    <p>Ilova zaxira fayl saqlash yoki yozuvlarni matn sifatida eksport qilish imkonini ham beradi. Ulardan foydalansangiz, fayl tizim fayl tanlagichida siz ko‘rsatgan joyga yoziladi. Bu jarayonni to‘liq o‘zingiz boshlaysiz va boshqarasiz; ishlab chiquvchi bu faylni ko‘rmaydi ham, olmaydi ham.</p>
+
+    <h3>Zaxira nusxa</h3>
+    <p>Telefoningizda Android'ning avtomatik zaxiralashi yoqilgan bo‘lsa, ilova ma'lumotlari <strong>o‘zingizning Google akkauntingizga</strong> zaxiralanishi va yangi qurilmada tiklanishi mumkin. Bu Android tizimining xususiyati; zaxira sizning Google hisobingizga tegishli, ishlab chiquvchining unga kirish imkoni yo‘q. Uni qurilma sozlamalaridagi Google zaxira bo‘limidan o‘chirib qo‘yishingiz mumkin.</p>
+
     <h3>Saqlash muddati va o‘chirish</h3>
-    <p>Ma'lumotlaringiz siz ilovada o‘chirmaguningizcha, ilovani o‘chirib tashlamaguningizcha yoki Android sozlamalarida ilova ma'lumotlarini tozalamaguningizcha qurilmangizda qoladi. Bizda nusxasi saqlanmaydi. Reklama xizmatlari yig‘gan ma'lumotlar bo‘yicha yuqoridagi maxfiylik sahifalariga murojaat qiling.</p>
+    <p>Kundalik yozuvlaringiz siz o‘chirmaguningizcha qurilmangizda saqlanadi. Yozuvni ilovaning ichida o‘chirishingiz mumkin. Hammasini o‘chirish uchun ilovani o‘chirib tashlang yoki Android sozlamalarida ilova ma'lumotlarini tozalang (<em>Sozlamalar → Ilovalar → Kundalik → Xotira → Ma'lumotlarni tozalash</em>). Hisob ham, serverdagi profil ham bo‘lmagani uchun bizda yozuvlaringiz nusxasi qolmaydi. Reklama xizmatlari yig‘gan ma'lumotlar bo‘yicha yuqoridagi maxfiylik sahifalariga murojaat qiling.</p>
+
+    <h3>Xavfsizlik</h3>
+    <p>Kundalik ma'lumotlari ilovaning shaxsiy xotira sohasida saqlanadi — Android uni boshqa ilovalardan ajratib turadi. Ixtiyoriy parol qulfi ilova ichidagi kirishni cheklaydi. Ilovaning o‘z tarmoq so‘rovlari HTTPS orqali yuboriladi.</p>
 
     <h3>Bolalar</h3>
     <p>Ilova 13 yoshgacha bo‘lgan bolalarga mo‘ljallanmagan. Unda bolalarni jalb qilish uchun yaratilgan mazmun yo‘q va ulardan ataylab ma'lumot yig‘ilmaydi. Agar bola ma'lumot yuborgan deb hisoblasangiz, biz bilan bog‘laning.</p>
@@ -188,13 +240,22 @@
     </div>
 
     <h3>Кратко</h3>
-    <p>Kundalik — приложение-дневник. В нём нет учётных записей и входа. Записи дневника хранятся только на вашем устройстве и нам не отправляются. Приложение бесплатное и показывает рекламу.</p>
+    <p>Kundalik — приложение-дневник. В нём нет учётных записей, регистрации и входа, оно не запрашивает имя, email, номер телефона, местоположение, контакты, фотографии или файлы. Записи дневника хранятся только на вашем устройстве и никогда не отправляются ни нам, ни на какой-либо сервер.</p>
+    <p>Приложение бесплатное и показывает рекламу. Интернет используется только для рекламы, проверки состояния приложения и загрузки списка «Другие наши проекты».</p>
 
     <h3>Что приложение хранит на устройстве</h3>
-    <p>Записи вашего дневника, необязательный PIN-код (только в виде хэша) и настройки приложения хранятся локально на вашем устройстве. Мы не собираем эти данные и не имеем к ним доступа.</p>
+    <p>Следующая информация хранится локально, в хранилище, доступном только этому приложению, и нам не передаётся:</p>
+    <ul>
+      <li><strong>Записи дневника:</strong> написанный вами текст, заголовок, дата, настроение, теги и отметка «избранное».</li>
+      <li><strong>Защита PIN-кодом (необязательно):</strong> при включении сам PIN не хранится; хранится только его криптографический хэш с «солью» и настройки блокировки.</li>
+      <li><strong>Настройки приложения:</strong> язык и тёмная тема.</li>
+    </ul>
+
+    <h3>Что само приложение НЕ собирает</h3>
+    <p>Имя, email, номер телефона или идентификаторы аккаунтов; местоположение и GPS; контакты, SMS, историю звонков, фотографии, камеру, микрофон; медицинские данные — <strong>ничего из этого</strong> не собирается. В приложении нет собственной аналитики, телеметрии или отчётов об ошибках. Мы не читаем записи вашего дневника и не имеем к ним доступа. О сторонних рекламных сервисах написано отдельно ниже.</p>
 
     <h3>Сетевые запросы</h3>
-    <p>Приложение использует интернет для показа рекламы, проверки своего состояния и версии на нашем сервере (<code>versionapps.magistrx.uz</code>) и загрузки списка «Другие наши проекты» с GitHub. Эти запросы не содержат записей вашего дневника и персональных данных.</p>
+    <p>Приложение использует интернет для показа рекламы, проверки своего состояния и версии на нашем сервере (<code>versionapps.magistrx.uz</code>) и загрузки списка «Другие наши проекты» с GitHub (<code>raw.githubusercontent.com</code>). Эти запросы не содержат записей вашего дневника и персональных данных, таких как имя или почта.</p>
 
     <h3>Реклама и сторонние сервисы</h3>
     <p>Приложение использует следующие сторонние сервисы, которые могут собирать данные согласно собственным политикам конфиденциальности:</p>
@@ -206,8 +267,25 @@
     <p><strong>Согласие:</strong> в Европейской экономической зоне, Великобритании и похожих регионах приложение показывает форму согласия Google UMP. Свой выбор можно изменить в <em>Настройки → Параметры конфиденциальности</em>.</p>
     <p><strong>Рекламный идентификатор:</strong> в настройках Android (<em>Настройки → Google → Реклама</em>) можно сбросить рекламный идентификатор или отказаться от персонализированной рекламы.</p>
 
+    <h3>Разрешения</h3>
+    <ul>
+      <li><code>INTERNET</code> и <code>ACCESS_NETWORK_STATE</code>: для загрузки рекламы, проверки состояния приложения и определения наличия интернета.</li>
+      <li><code>AD_ID</code> (рекламный идентификатор): для перечисленных выше рекламных сервисов.</li>
+    </ul>
+    <p>Приложение не запрашивает доступ к камере, микрофону, местоположению, контактам, хранилищу или уведомлениям. Рекламные библиотеки могут объявлять дополнительные технические разрешения, необходимые для работы; они не дают доступа к вашим персональным данным.</p>
+
+    <h3>Передача данных</h3>
+    <p>Хранящиеся на вашем устройстве записи дневника и настройки мы никому не продаём и не передаём, поскольку они не покидают устройство. Если вы нажимаете «Поделиться приложением», ссылка на приложение передаётся через системное окно «Поделиться» выбранному вами приложению; мы её не получаем. Ссылки в приложении (например, Telegram) открывают внешнее приложение или браузер, у которых своя политика конфиденциальности.</p>
+    <p>Приложение также позволяет сохранить файл резервной копии или экспортировать записи в текст. При их использовании файл записывается в место, которое вы выбрали в системном выборе файлов. Этот процесс полностью инициируете и контролируете вы; разработчик файл не видит и не получает.</p>
+
+    <h3>Резервное копирование</h3>
+    <p>Если на телефоне включено автоматическое резервное копирование Android, данные приложения могут копироваться в <strong>ваш собственный аккаунт Google</strong> и восстанавливаться на новом устройстве. Это функция операционной системы Android; копия принадлежит вашему аккаунту Google, у разработчика нет к ней доступа. Её можно отключить в настройках резервного копирования Google на устройстве.</p>
+
     <h3>Хранение и удаление</h3>
-    <p>Ваши данные хранятся на устройстве, пока вы не удалите их в приложении, не удалите приложение или не очистите его данные в настройках Android. Копии у нас не остаётся. По данным, собранным рекламными сервисами, обращайтесь на их страницы конфиденциальности, указанные выше.</p>
+    <p>Записи дневника хранятся на вашем устройстве, пока вы их не удалите. Запись можно удалить внутри приложения. Чтобы удалить всё, удалите приложение или очистите его данные в настройках Android (<em>Настройки → Приложения → Kundalik → Память → Очистить данные</em>). Поскольку нет ни аккаунта, ни профиля на сервере, копии ваших записей у нас не остаётся. По данным, собранным рекламными сервисами, обращайтесь на их страницы конфиденциальности, указанные выше.</p>
+
+    <h3>Безопасность</h3>
+    <p>Данные дневника хранятся в приватной области приложения, изолированной операционной системой Android от других приложений. Необязательная блокировка PIN-кодом ограничивает доступ внутри приложения. Собственные сетевые запросы приложения используют HTTPS.</p>
 
     <h3>Дети</h3>
     <p>Приложение не предназначено для детей младше 13 лет, не содержит контента, рассчитанного на привлечение детей, и не собирает намеренно их данные. Если вы считаете, что ребёнок передал информацию, свяжитесь с нами.</p>
